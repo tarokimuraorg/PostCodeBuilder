@@ -26,6 +26,8 @@ class JPPostCodeBuilder:
         if self._post_code == '0791143':
             return '北海', '道', '赤平', '市'
 
+        raise ValueError(self._emcreator.message('JPPostCodeBuilder.py','convertToAddress','post code error','the post code is an incompatible value.'))
+
     def convertKanjiToYomigana(self):
 
         address = self.convertToAddress()
@@ -41,8 +43,11 @@ class JPPostCodeBuilder:
 
             if kanji == '北海':
                 yomigana.append('ホッカイ')
-                
+
             if kanji == '赤平':
                 yomigana.append('アカビラ')
 
-        return yomigana
+        if len(yomigana) > 0:
+            return yomigana
+
+        raise ValueError(self._emcreator.message('JPPostCodeBuilder.py','convertKanjiToYomigana','kanji error','the kanji is an incompatible value.'))
