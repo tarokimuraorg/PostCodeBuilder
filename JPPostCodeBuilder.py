@@ -5,14 +5,11 @@ class JPPostCodeBuilder:
 
     def __init__(self, post_code : str):
 
-        self._post_code = ''
+        self._post_code = post_code.strip()
         self._emcreator = ErrorMessageCreator()
         
-        if re.match('^\d{3}-\d{4}$', post_code):
-            self._post_code = post_code.replace('-','')
-        
-        if re.match('^\d{7}$', post_code):
-            self._post_code = post_code
+        if re.match('^\d{3}-\d{4}$', self._post_code):
+            self._post_code = self._post_code.replace('-','')
 
     def digits_only(self) -> str:
 
@@ -23,10 +20,46 @@ class JPPostCodeBuilder:
 
     def convertToAddress(self):
 
-        if self._post_code == '0791143':
-            return '北海', '道', '赤平', '市'
+        if (re.match('^\d{7}$',self._post_code)):
+            
+            address = []
 
-        raise ValueError(self._emcreator.message('JPPostCodeBuilder.py','convertToAddress','post code error','the post code is an incompatible value.'))
+            first_three_digits = self._post_code[0:3]
+            last_four_digits = self._post_code[3:7]
+
+            if first_three_digits == '079':
+
+                address.append('北海道')
+                address.append('赤平市')
+
+            if last_four_digits == '1143':
+
+                address.append('赤平')
+                return address
+
+            elif last_four_digits == '1134':
+
+                address.append('泉町')
+                return address
+
+            elif last_four_digits == '1274':
+
+                address.append('エルム町')
+                return address
+
+            elif last_four_digits == '1141':
+            
+                address.append('大町')
+                return address
+
+            elif last_four_digits == '1121':
+                
+                address.append('北文京町')
+                return address
+
+            raise ValueError(self._emcreator.message('JPPostCodeBuilder.py','convertToAddress','post code error','the post code is an incompatible value.'))
+
+        raise ValueError(self._emcreator.message('JPPostCodeBuilder.py','init','invalid argument','the argument is an incompatible japan post code.'))
 
     def convertKanjiToYomigana(self):
 
@@ -35,17 +68,26 @@ class JPPostCodeBuilder:
 
         for kanji in address:
 
-            if kanji == '道':
-                yomigana.append('ドウ')
-            
-            if kanji == '市':
-                yomigana.append('シ')                
+            if kanji == '北海道':
+                yomigana.append('ホッカイドウ')
 
-            if kanji == '北海':
-                yomigana.append('ホッカイ')
+            if kanji == '赤平市':
+                yomigana.append('アカビラシ')
 
             if kanji == '赤平':
                 yomigana.append('アカビラ')
+
+            elif kanji == '泉町':
+                yomigana.append('イズミマチ')
+
+            elif kanji == 'エルム町':
+                yomigana.append('エルムチョウ')
+
+            elif kanji == '大町':
+                yomigana.append('オオマチ')
+
+            elif kanji == '北文京町':
+                yomigana.append('キタブンキョウチョウ')
 
         if len(yomigana) > 0:
             return yomigana
