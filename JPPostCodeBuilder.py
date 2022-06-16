@@ -57,6 +57,56 @@ class JPPostCodeBuilder:
                 address.append('北文京町')
                 return address
 
+            elif last_four_digits == '1101':
+                
+                address.append('共和町')
+                return address
+
+            elif last_four_digits == '1154':
+                
+                address.append('幸町')
+                return address
+
+            elif last_four_digits == '1152':
+
+                address.append('桜木町')
+                return address
+
+            elif last_four_digits == '1155':
+
+                address.append('昭和町')
+                return address
+
+            elif last_four_digits == '1156':
+
+                address.append('住吉町')
+                return address
+
+            elif last_four_digits == '1124':
+
+                address.append('豊丘町')
+                return address
+
+            elif last_four_digits == '1133':
+
+                address.append('豊里')
+                return address
+
+            elif last_four_digits == '1135':
+
+                address.append('錦町')
+                return address
+
+            elif last_four_digits == '1131':
+
+                address.append('西豊里町')
+                return address
+
+            elif last_four_digits == '1122':
+
+                address.append('西文京町')
+                return address
+
             raise ValueError(self._emcreator.message('JPPostCodeBuilder.py','convertToAddress','post code error','the post code is an incompatible value.'))
 
         raise ValueError(self._emcreator.message('JPPostCodeBuilder.py','init','invalid argument','the argument is an incompatible japan post code.'))
@@ -88,6 +138,36 @@ class JPPostCodeBuilder:
 
             elif kanji == '北文京町':
                 yomigana.append('キタブンキョウチョウ')
+            
+            elif kanji == '共和町':
+                yomigana.append('キョウワチョウ')
+            
+            elif kanji == '幸町':
+                yomigana.append('サイワイチョウ')
+
+            elif kanji == '桜木町':
+                yomigana.append('サクラギチョウ')
+
+            elif kanji == '昭和町':
+                yomigana.append('ショウワチョウ')
+
+            elif kanji == '住吉町':
+                yomigana.append('スミヨシチョウ')
+
+            elif kanji == '豊丘町':
+                yomigana.append('トヨオカチョウ')
+
+            elif kanji == '豊里':
+                yomigana.append('トヨサト')
+            
+            elif kanji == '錦町':
+                yomigana.append('ニシキマチ')
+
+            elif kanji == '西豊里町':
+                yomigana.append('ニシトヨサトチョウ')
+
+            elif kanji == '西文京町':
+                yomigana.append('ニシブンキョウチョウ')
 
         if len(yomigana) > 0:
             return yomigana
