@@ -1,4 +1,3 @@
-from turtle import pos
 from JPPostCodeBuilder import JPPostCodeBuilder
 
 post_code = ''
@@ -32,14 +31,31 @@ post_code = ''
 #post_code = '079-1284'
 #post_code = '079-1153'
 #post_code = '079-1102'
-post_code = '079-1136'
+#post_code = '079-1136'
+#post_code = '079-1144'
+#post_code = '079-1151'
+#post_code = '079-1266'
+#post_code = '079-1264'
+#post_code = '079-1262'
+#post_code = '079-1265'
+#post_code = '079-1261'
+#post_code = '079-1263'
+#post_code = '079-1264'
+#post_code = '079-1268'
+#post_code = '079-1267'
+post_code = ''
 
 try:
     jppc_builder = JPPostCodeBuilder(post_code)
-    address = jppc_builder.convertToAddress()
 
-    print(jppc_builder.convertToAddress())
-    print(jppc_builder.convertKanjiToYomigana())
+    address = jppc_builder.convertToAddress()
+    yomigana = jppc_builder.convertKanjiToYomigana()
+
+    for elm in address:
+        print(elm)
+
+    for elm in yomigana:
+        print(elm)
 
 except ValueError as ve:
     print(ve)
