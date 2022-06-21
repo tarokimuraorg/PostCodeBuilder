@@ -43,13 +43,19 @@ post_code = ''
 #post_code = '079-1264'
 #post_code = '079-1268'
 #post_code = '079-1267'
-post_code = ''
+#post_code = '079-1111'
+#post_code = '079-1112'
+#post_code = '079-1113'
+#post_code = '079-1114'
+#post_code = '085-0467'
+#post_code = '085-0238'
+post_code = '085-0212'
 
 try:
     jppc_builder = JPPostCodeBuilder(post_code)
 
     address = jppc_builder.convertToAddress()
-    yomigana = jppc_builder.convertKanjiToYomigana()
+    yomigana = jppc_builder.convertKanjiToKatakana()
 
     for elm in address:
         print(elm)
