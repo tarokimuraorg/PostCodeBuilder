@@ -340,246 +340,341 @@ class JPPostCodeBuilder:
 
                 return results
 
+            elif last_four_digits == '1111':
+
+                address.append('若木町北')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '1112':
+
+                address.append('若木町西')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '1113':
+
+                address.append('若木町東')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '1114':
+
+                address.append('若木町南')
+                results.append(address)
+
+                return results
+
+        elif first_three_digits == '085':
+            
+            address.append('北海道')
+            address.append('釧路市')
+
+            if last_four_digits == '0467':
+                
+                address.append('阿寒町阿寒湖温泉')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '0238':
+
+                address.append('阿寒町飽別')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '0212':
+
+                address.append('阿寒町旭町')
+                results.append(address)
+
+                return results
+
         raise ValueError(self._emcreator.message('JPPostCodeBuilder.py','convertToAddress','post code error','the post code is an incompatible value.'))
         
-    def convertKanjiToYomigana(self):
+    def convertKanjiToKatakana(self):
 
         address = self.convertToAddress()
         results = []
 
         for elm in address:
 
-            yomigana = []
+            katakana = []
 
             if len(elm) == 3:
 
                 if elm[0] == '北海道':
-                    yomigana.append('ホッカイドウ')
+
+                    katakana.append('ホッカイドウ')
 
                     if elm[1] == '赤平市':
-                        yomigana.append('アカビラシ')
+
+                        katakana.append('アカビラシ')
 
                         if elm[2] == '赤平':
 
-                            yomigana.append('アカビラ')
-                            results.append(yomigana)
+                            katakana.append('アカビラ')
+                            results.append(katakana)
 
                         elif elm[2] == '泉町':
 
-                            yomigana.append('イズミマチ')
-                            results.append(yomigana)
+                            katakana.append('イズミマチ')
+                            results.append(katakana)
 
                         elif elm[2] == 'エルム町':
 
-                            yomigana.append('エルムチョウ')
-                            results.append(yomigana)
+                            katakana.append('エルムチョウ')
+                            results.append(katakana)
 
                         elif elm[2] == '大町':
 
-                            yomigana.append('オオマチ')
-                            results.append(yomigana)
+                            katakana.append('オオマチ')
+                            results.append(katakana)
 
                         elif elm[2] == '北文京町':
 
-                            yomigana.append('キタブンキョウチョウ')
-                            results.append(yomigana)
+                            katakana.append('キタブンキョウチョウ')
+                            results.append(katakana)
             
                         elif elm[2] == '共和町':
 
-                            yomigana.append('キョウワチョウ')
-                            results.append(yomigana)
+                            katakana.append('キョウワチョウ')
+                            results.append(katakana)
             
                         elif elm[2] == '幸町':
 
-                            yomigana.append('サイワイチョウ')
-                            results.append(yomigana)
+                            katakana.append('サイワイチョウ')
+                            results.append(katakana)
 
                         elif elm[2] == '桜木町':
 
-                            yomigana.append('サクラギチョウ')
-                            results.append(yomigana)
+                            katakana.append('サクラギチョウ')
+                            results.append(katakana)
 
                         elif elm[2] == '昭和町':
 
-                            yomigana.append('ショウワチョウ')
-                            results.append(yomigana)
+                            katakana.append('ショウワチョウ')
+                            results.append(katakana)
 
                         elif elm[2] == '住吉町':
 
-                            yomigana.append('スミヨシチョウ')
-                            results.append(yomigana)
+                            katakana.append('スミヨシチョウ')
+                            results.append(katakana)
 
                         elif elm[2] == '豊丘町':
 
-                            yomigana.append('トヨオカチョウ')
-                            results.append(yomigana)
+                            katakana.append('トヨオカチョウ')
+                            results.append(katakana)
 
                         elif elm[2] == '豊里':
 
-                            yomigana.append('トヨサト')
-                            results.append(yomigana)
+                            katakana.append('トヨサト')
+                            results.append(katakana)
             
                         elif elm[2] == '錦町':
 
-                            yomigana.append('ニシキマチ')
-                            results.append(yomigana)
+                            katakana.append('ニシキマチ')
+                            results.append(katakana)
 
                         elif elm[2] == '西豊里町':
 
-                            yomigana.append('ニシトヨサトチョウ')
-                            results.append(yomigana)
+                            katakana.append('ニシトヨサトチョウ')
+                            results.append(katakana)
 
                         elif elm[2] == '西文京町':
 
-                            yomigana.append('ニシブンキョウチョウ')
-                            results.append(yomigana)
+                            katakana.append('ニシブンキョウチョウ')
+                            results.append(katakana)
 
                         elif elm[2] == '東大町':
 
-                            yomigana.append('ヒガシオオマチ')
-                            results.append(yomigana)
+                            katakana.append('ヒガシオオマチ')
+                            results.append(katakana)
 
                         elif elm[2] == '東豊里町':
 
-                            yomigana.append('ヒガシトヨサトチョウ')
-                            results.append(yomigana)
+                            katakana.append('ヒガシトヨサトチョウ')
+                            results.append(katakana)
 
                         elif elm[2] == '東文京町':
 
-                            yomigana.append('ヒガシブンキョウチョウ')
-                            results.append(yomigana)
+                            katakana.append('ヒガシブンキョウチョウ')
+                            results.append(katakana)
 
                         elif elm[2] == '百戸町北':
 
-                            yomigana.append('ヒャッコチョウキタ')
-                            results.append(yomigana)
+                            katakana.append('ヒャッコチョウキタ')
+                            results.append(katakana)
 
                         elif elm[2] == '百戸町西':
 
-                            yomigana.append('ヒャッコチョウニシ')
-                            results.append(yomigana)
+                            katakana.append('ヒャッコチョウニシ')
+                            results.append(katakana)
 
                         elif elm[2] == '百戸町東':
 
-                            yomigana.append('ヒャッコチョウヒガシ')
-                            results.append(yomigana)
+                            katakana.append('ヒャッコチョウヒガシ')
+                            results.append(katakana)
 
                         elif elm[2] == '平岸曙町':
 
-                            yomigana.append('ヒラギシアケボノチョウ')
-                            results.append(yomigana)
+                            katakana.append('ヒラギシアケボノチョウ')
+                            results.append(katakana)
 
                         elif elm[2] == '平岸桂町':
 
-                            yomigana.append('ヒラギシカツラチョウ')
-                            results.append(yomigana)
+                            katakana.append('ヒラギシカツラチョウ')
+                            results.append(katakana)
 
                         elif elm[2] == '平岸新光町':
 
-                            yomigana.append('ヒラギシシンコウチョウ')
-                            results.append(yomigana)
+                            katakana.append('ヒラギシシンコウチョウ')
+                            results.append(katakana)
 
                         elif elm[2] == '平岸仲町':
 
-                            yomigana.append('ヒラギシナカマチ')
-                            results.append(yomigana)
+                            katakana.append('ヒラギシナカマチ')
+                            results.append(katakana)
 
                         elif elm[2] == '平岸西町':
 
-                            yomigana.append('ヒラギシニシマチ')
-                            results.append(yomigana)
+                            katakana.append('ヒラギシニシマチ')
+                            results.append(katakana)
 
                         elif elm[2] == '平岸東町':
 
-                            yomigana.append('ヒラギシヒガシマチ')
-                            results.append(yomigana)
+                            katakana.append('ヒラギシヒガシマチ')
+                            results.append(katakana)
 
                         elif elm[2] == '平岸南町':
 
-                            yomigana.append('ヒラギシミナミマチ')
-                            results.append(yomigana)
+                            katakana.append('ヒラギシミナミマチ')
+                            results.append(katakana)
 
                         elif elm[2] == '豊栄町':
 
-                            yomigana.append('ホウエイチョウ')
-                            results.append(yomigana)
+                            katakana.append('ホウエイチョウ')
+                            results.append(katakana)
 
                         elif elm[2] == '幌岡町':
 
-                            yomigana.append('ホロオカチョウ')
-                            results.append(yomigana)
+                            katakana.append('ホロオカチョウ')
+                            results.append(katakana)
 
                         elif elm[2] == '本町':
 
-                            yomigana.append('ホンチョウ')
-                            results.append(yomigana)
+                            katakana.append('ホンチョウ')
+                            results.append(katakana)
 
                         elif elm[2] == '美園町':
 
-                            yomigana.append('ミソノチョウ')
-                            results.append(yomigana)
+                            katakana.append('ミソノチョウ')
+                            results.append(katakana)
 
                         elif elm[2] == '宮下町':
 
-                            yomigana.append('ミヤシタチョウ')
-                            results.append(yomigana)
+                            katakana.append('ミヤシタチョウ')
+                            results.append(katakana)
 
                         elif elm[2] == '茂尻':
 
-                            yomigana.append('モジリ')
-                            results.append(yomigana)
+                            katakana.append('モジリ')
+                            results.append(katakana)
 
                         elif elm[2] == '茂尻旭町':
 
-                            yomigana.append('モジリアサヒマチ')
-                            results.append(yomigana)
+                            katakana.append('モジリアサヒマチ')
+                            results.append(katakana)
 
                         elif elm[2] == '茂尻春日町':
 
-                            yomigana.append('モジリカスガチョウ')
-                            results.append(yomigana)
+                            katakana.append('モジリカスガチョウ')
+                            results.append(katakana)
 
                         elif elm[2] == '茂尻栄町':
 
-                            yomigana.append('モジリサカエマチ')
-                            results.append(yomigana)
+                            katakana.append('モジリサカエマチ')
+                            results.append(katakana)
 
                         elif elm[2] == '茂尻新春日町':
 
-                            yomigana.append('モジリシンカスガチョウ')
-                            results.append(yomigana)
+                            katakana.append('モジリシンカスガチョウ')
+                            results.append(katakana)
 
                         elif elm[2] == '茂尻新町':
 
-                            yomigana.append('モジリシンマチ')
-                            results.append(yomigana)
+                            katakana.append('モジリシンマチ')
+                            results.append(katakana)
 
                         elif elm[2] == '茂尻中央町北':
 
-                            yomigana.append('モジリチュウオウチョウキタ')
-                            results.append(yomigana)
+                            katakana.append('モジリチュウオウチョウキタ')
+                            results.append(katakana)
 
                         elif elm[2] == '茂尻本町':
 
-                            yomigana.append('モジリホンチョウ')
-                            results.append(yomigana)
+                            katakana.append('モジリホンチョウ')
+                            results.append(katakana)
 
                         elif elm[2] == '茂尻宮下町':
 
-                            yomigana.append('モジリミヤシタチョウ')
-                            results.append(yomigana)
+                            katakana.append('モジリミヤシタチョウ')
+                            results.append(katakana)
 
                         elif elm[2] == '茂尻元町北':
 
-                            yomigana.append('モジリモトマチキタ')
-                            results.append(yomigana)
+                            katakana.append('モジリモトマチキタ')
+                            results.append(katakana)
 
                         elif elm[2] == '茂尻元町南':
 
-                            yomigana.append('モジリモトマチミナミ')
-                            results.append(yomigana)
+                            katakana.append('モジリモトマチミナミ')
+                            results.append(katakana)
+
+                        elif elm[2] == '若木町北':
+
+                            katakana.append('ワカキチョウキタ')
+                            results.append(katakana)
+
+                        elif elm[2] == '若木町西':
+
+                            katakana.append('ワカキチョウニシ')
+                            results.append(katakana)
+
+                        elif elm[2] == '若木町東':
+
+                            katakana.append('ワカキチョウヒガシ')
+                            results.append(katakana)
+
+                        elif elm[2] == '若木町南':
+
+                            katakana.append('ワカキチョウミナミ')
+                            results.append(katakana)
+
+                    elif elm[1] == '釧路市':
+
+                        katakana.append('クシロシ')
+                        
+                        if elm[2] == '阿寒町阿寒湖温泉':
+                            
+                            katakana.append('アカンチョウアカンコオンセン')
+                            results.append(katakana)
+
+                        elif elm[2] == '阿寒町飽別':
+
+                            katakana.append('アカンチョウアクベツ')
+                            results.append(katakana)
+
+                        elif elm[2] == '阿寒町旭町':
+
+                            katakana.append('アカンチョウアサヒマチ')
+                            results.append(katakana)
 
         if len(results) > 0:
             return results
 
-        raise ValueError(self._emcreator.message('JPPostCodeBuilder.py','convertKanjiToYomigana','kanji error','the kanji is an incompatible value.'))
+        raise ValueError(self._emcreator.message('JPPostCodeBuilder.py','convertKanjiToKatakana','kanji error','the kanji is an incompatible value.'))
