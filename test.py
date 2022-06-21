@@ -47,9 +47,15 @@ post_code = ''
 #post_code = '079-1112'
 #post_code = '079-1113'
 #post_code = '079-1114'
+
 #post_code = '085-0467'
 #post_code = '085-0238'
-post_code = '085-0212'
+#post_code = '085-0212'
+#post_code = '085-0245'
+#post_code = '085-0221'
+#post_code = '085-0235'
+#post_code = '085-0216'
+post_code = '085-0217'
 
 try:
     jppc_builder = JPPostCodeBuilder(post_code)
