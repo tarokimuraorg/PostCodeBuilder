@@ -429,6 +429,62 @@ class JPPostCodeBuilder:
 
                 return results
 
+            elif last_four_digits == '0211':
+
+                address.append('阿寒町下舌辛')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '0231':
+
+                address.append('阿寒町下徹別')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '0223':
+
+                address.append('阿寒町下布伏内')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '0218':
+
+                address.append('阿寒町新町')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '0234':
+
+                address.append('阿寒町蘇牛')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '0232':
+
+                address.append('阿寒町大正')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '0215':
+
+                address.append('阿寒町中央')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '0237':
+
+                address.append('阿寒町徹別中央')
+                results.append(address)
+
+                return results
+
         raise ValueError(self._emcreator.message('JPPostCodeBuilder.py','convertToAddress','post code error','the post code is an incompatible value.'))
         
     def convertKanjiToKatakana(self):
@@ -732,6 +788,46 @@ class JPPostCodeBuilder:
                         elif kanji[2] == '阿寒町北町':
 
                             katakana.append('アカンチョウキタマチ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '阿寒町下舌辛':
+
+                            katakana.append('アカンチョウシモシタカラ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '阿寒町下徹別':
+
+                            katakana.append('アカンチョウシモテシベツ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '阿寒町下布伏内':
+
+                            katakana.append('アカンチョウシモフブシナイ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '阿寒町新町':
+
+                            katakana.append('アカンチョウシンマチ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '阿寒町蘇牛':
+
+                            katakana.append('アカンチョウソウシ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '阿寒町大正':
+
+                            katakana.append('アカンチョウタイショウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '阿寒町中央':
+
+                            katakana.append('アカンチョウチュウオウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '阿寒町徹別中央':
+
+                            katakana.append('アカンチョウテシベツチュウオウ')
                             results.append(katakana)
 
         if len(results) > 0:
