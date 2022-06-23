@@ -485,6 +485,48 @@ class JPPostCodeBuilder:
 
                 return results
 
+            elif last_four_digits == '0241':
+
+                address.append('阿寒町中阿寒')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '0236':
+
+                address.append('阿寒町中徹別')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '0213':
+
+                address.append('阿寒町仲町')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '0243':
+
+                address.append('阿寒町西阿寒')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '0233':
+
+                address.append('阿寒町西徹別')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '0201':
+
+                address.append('阿寒町仁々志別')
+                results.append(address)
+
+                return results
+
         raise ValueError(self._emcreator.message('JPPostCodeBuilder.py','convertToAddress','post code error','the post code is an incompatible value.'))
         
     def convertKanjiToKatakana(self):
@@ -828,6 +870,36 @@ class JPPostCodeBuilder:
                         elif kanji[2] == '阿寒町徹別中央':
 
                             katakana.append('アカンチョウテシベツチュウオウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '阿寒町中阿寒':
+
+                            katakana.append('アカンチョウナカアカン')
+                            results.append(katakana)
+
+                        elif kanji[2] == '阿寒町中徹別':
+
+                            katakana.append('アカンチョウナカテシベツ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '阿寒町仲町':
+
+                            katakana.append('アカンチョウナカマチ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '阿寒町西阿寒':
+
+                            katakana.append('アカンチョウニシアカン')
+                            results.append(katakana)
+
+                        elif kanji[2] == '阿寒町西徹別':
+
+                            katakana.append('アカンチョウニシテシベツ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '阿寒町仁々志別':
+
+                            katakana.append('アカンチョウニニシベツ')
                             results.append(katakana)
 
         if len(results) > 0:
