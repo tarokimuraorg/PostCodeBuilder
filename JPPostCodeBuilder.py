@@ -34,7 +34,12 @@ class JPPostCodeBuilder:
             address.append('北海道')
             address.append('赤平市')
 
-            if last_four_digits == '1143':
+            if last_four_digits == '1100':
+
+                results.append(address)
+                return results
+
+            elif last_four_digits == '1143':
 
                 address.append('赤平')
                 results.append(address)
@@ -373,7 +378,40 @@ class JPPostCodeBuilder:
             address.append('北海道')
             address.append('釧路市')
 
-            if last_four_digits == '0467':
+            if last_four_digits == '1200':
+                
+                address[1] = '阿寒郡鶴居村'
+                results.append(address)
+                return results
+
+            elif last_four_digits == '1146':
+                
+                address[1] = '阿寒郡鶴居村'
+
+                address.append('アトコシヤラカ')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '1145':
+
+                address[1] = '阿寒郡鶴居村'
+
+                address.append('温根内')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '1132':
+
+                address[1] = '阿寒郡鶴居村'
+
+                address.append('上幌呂')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '0467':
                 
                 address.append('阿寒町阿寒湖温泉')
                 results.append(address)
@@ -566,7 +604,23 @@ class JPPostCodeBuilder:
 
             katakana = []
 
-            if len(kanji) == 3:
+            if len(kanji) == 2:
+
+                if kanji[0] == '北海道':
+
+                    katakana.append('ホッカイドウ')
+
+                    if kanji[1] == '赤平市':
+
+                        katakana.append('アカビラシ')
+                        results.append(katakana)
+
+                    elif kanji[1] == '阿寒郡鶴居村':
+
+                        katakana.append('アカングンツルイムラ')
+                        results.append(katakana)
+
+            elif len(kanji) == 3:
 
                 if kanji[0] == '北海道':
 
@@ -950,6 +1004,25 @@ class JPPostCodeBuilder:
                             katakana.append('アカンチョウユウベツヨコヤマ')
                             results.append(katakana)
 
+                    elif kanji[1] == '阿寒郡鶴居村':
+
+                        katakana.append('アカングンツルイムラ')
+
+                        if kanji[2] == 'アトコシヤラカ':
+
+                            katakana.append('アトコシヤラカ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '温根内':
+
+                            katakana.append('オンネナイ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '上幌呂':
+
+                            katakana.append('カミホロロ')
+                            results.append(katakana)
+                        
         if len(results) > 0:
             return results
 
