@@ -527,6 +527,34 @@ class JPPostCodeBuilder:
 
                 return results
 
+            elif last_four_digits == '0242':
+
+                address.append('阿寒町東舌辛')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '0214':
+
+                address.append('阿寒町富士見')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '0222':
+
+                address.append('阿寒町布伏内')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '0224':
+
+                address.append('阿寒町雄別横山')
+                results.append(address)
+                
+                return results
+
         raise ValueError(self._emcreator.message('JPPostCodeBuilder.py','convertToAddress','post code error','the post code is an incompatible value.'))
         
     def convertKanjiToKatakana(self):
@@ -900,6 +928,26 @@ class JPPostCodeBuilder:
                         elif kanji[2] == '阿寒町仁々志別':
 
                             katakana.append('アカンチョウニニシベツ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '阿寒町東舌辛':
+
+                            katakana.append('アカンチョウヒガシシタカラ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '阿寒町富士見':
+
+                            katakana.append('アカンチョウフジミ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '阿寒町布伏内':
+
+                            katakana.append('アカンチョウフブシナイ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '阿寒町雄別横山':
+
+                            katakana.append('アカンチョウユウベツヨコヤマ')
                             results.append(katakana)
 
         if len(results) > 0:
