@@ -411,6 +411,96 @@ class JPPostCodeBuilder:
 
                 return results
 
+            elif last_four_digits == '1212':
+
+                address[1] = '阿寒郡鶴居村'
+
+                address.append('支雪裡')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '1133':
+
+                address[1] = '阿寒郡鶴居村'
+
+                address.append('支幌呂')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '1262':
+
+                address[1] = '阿寒郡鶴居村'
+
+                address.append('下久著呂')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '1211':
+
+                address[1] = '阿寒郡鶴居村'
+
+                address.append('下雪裡')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '1144':
+
+                address[1] = '阿寒郡鶴居村'
+
+                address.append('下幌呂')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '1131':
+
+                address[1] = '阿寒郡鶴居村'
+
+                address.append('新幌呂')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '1201':
+
+                address[1] = '阿寒郡鶴居村'
+
+                address.append('鶴居北')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '1203':
+
+                address[1] = '阿寒郡鶴居村'
+
+                address.append('鶴居西')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '1206':
+
+                address[1] = '阿寒郡鶴居村'
+
+                address.append('鶴居東')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '1204':
+
+                address[1] = '阿寒郡鶴居村'
+
+                address.append('鶴居南')
+                results.append(address)
+
+                return results
+
             elif last_four_digits == '0467':
                 
                 address.append('阿寒町阿寒湖温泉')
@@ -1021,6 +1111,56 @@ class JPPostCodeBuilder:
                         elif kanji[2] == '上幌呂':
 
                             katakana.append('カミホロロ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '支雪裡':
+
+                            katakana.append('シセツリ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '支幌呂':
+
+                            katakana.append('シホロロ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '下久著呂':
+
+                            katakana.append('シモクチョロ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '下雪裡':
+
+                            katakana.append('シモセツリ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '下幌呂':
+
+                            katakana.append('シモホロロ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '新幌呂':
+
+                            katakana.append('シンホロロ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '鶴居北':
+
+                            katakana.append('ツルイキタ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '鶴居西':
+
+                            katakana.append('ツルイニシ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '鶴居東':
+
+                            katakana.append('ツルイヒガシ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '鶴居南':
+
+                            katakana.append('ツルイミナミ')
                             results.append(katakana)
                         
         if len(results) > 0:
