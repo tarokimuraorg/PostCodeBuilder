@@ -501,6 +501,51 @@ class JPPostCodeBuilder:
 
                 return results
 
+            elif last_four_digits == '1261':
+
+                address[1] = '阿寒郡鶴居村'
+
+                address.append('中久著呂')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '1202':
+
+                address[1] = '阿寒郡鶴居村'
+
+                address.append('中雪裡（西）')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '1207':
+
+                address[1] = '阿寒郡鶴居村'
+
+                address.append('中雪裡（東）')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '1205':
+
+                address[1] = '阿寒郡鶴居村'
+
+                address.append('中雪裡（南）')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '1143':
+
+                address[1] = '阿寒郡鶴居村'
+
+                address.append('中幌呂')
+                results.append(address)
+
+                return results
+
             elif last_four_digits == '0467':
                 
                 address.append('阿寒町阿寒湖温泉')
@@ -1161,6 +1206,31 @@ class JPPostCodeBuilder:
                         elif kanji[2] == '鶴居南':
 
                             katakana.append('ツルイミナミ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '中久著呂':
+
+                            katakana.append('ナカクチョロ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '中雪裡（西）':
+
+                            katakana.append('ナカセツリ(ニシ)')
+                            results.append(katakana)
+
+                        elif kanji[2] == '中雪裡（東）':
+
+                            katakana.append('ナカセツリ(ヒガシ)')
+                            results.append(katakana)
+
+                        elif kanji[2] == '中雪裡（南）':
+
+                            katakana.append('ナカセツリ(ミナミ)')
+                            results.append(katakana)
+
+                        elif kanji[2] == '中幌呂':
+
+                            katakana.append('ナカホロロ')
                             results.append(katakana)
                         
         if len(results) > 0:
