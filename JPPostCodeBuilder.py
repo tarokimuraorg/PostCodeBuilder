@@ -546,6 +546,51 @@ class JPPostCodeBuilder:
 
                 return results
 
+            elif last_four_digits == '1147':
+
+                address[1] = '阿寒郡鶴居村'
+
+                address.append('幌呂')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '1141':
+
+                address[1] = '阿寒郡鶴居村'
+
+                address.append('幌呂西')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '1142':
+
+                address[1] = '阿寒郡鶴居村'
+
+                address.append('幌呂東')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '1213':
+
+                address[1] = '阿寒郡鶴居村'
+
+                address.append('茂雪裡')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '1134':
+
+                address[1] = '阿寒郡鶴居村'
+
+                address.append('茂幌呂')
+                results.append(address)
+
+                return results
+
             elif last_four_digits == '0467':
                 
                 address.append('阿寒町阿寒湖温泉')
@@ -730,7 +775,7 @@ class JPPostCodeBuilder:
 
         raise ValueError(self._emcreator.message('JPPostCodeBuilder.py','convertToAddress','post code error','the post code is an incompatible value.'))
         
-    def convertKanjiToKatakana(self):
+    def furigana(self):
 
         address = self.convertToAddress()
         results = []
@@ -1231,6 +1276,31 @@ class JPPostCodeBuilder:
                         elif kanji[2] == '中幌呂':
 
                             katakana.append('ナカホロロ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '幌呂':
+
+                            katakana.append('ホロロ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '幌呂西':
+
+                            katakana.append('ホロロニシ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '幌呂東':
+
+                            katakana.append('ホロロヒガシ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '茂雪裡':
+
+                            katakana.append('モセツリ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '茂幌呂':
+
+                            katakana.append('モホロロ')
                             results.append(katakana)
                         
         if len(results) > 0:
