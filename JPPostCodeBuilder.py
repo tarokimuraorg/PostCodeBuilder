@@ -39,7 +39,32 @@ class JPPostCodeBuilder:
                 results.append(address)
                 return results
 
-            elif last_four_digits == '1143':
+        elif first_three_digits == '085':
+            
+            address.append('北海道')
+            address.append('阿寒郡鶴居村')
+
+            if last_four_digits == '1200':
+                
+                results.append(address)
+                return results
+
+        elif first_three_digits == '070':
+
+            address.append('北海道')
+            address.append('旭川市')
+
+            if last_four_digits == '0000':
+
+                results.append(address)
+                return results
+
+        if first_three_digits == '079':
+
+            address.append('北海道')
+            address.append('赤平市')
+
+            if last_four_digits == '1143':
 
                 address.append('赤平')
                 results.append(address)
@@ -378,13 +403,7 @@ class JPPostCodeBuilder:
             address.append('北海道')
             address.append('釧路市')
 
-            if last_four_digits == '1200':
-                
-                address[1] = '阿寒郡鶴居村'
-                results.append(address)
-                return results
-
-            elif last_four_digits == '1146':
+            if last_four_digits == '1146':
                 
                 address[1] = '阿寒郡鶴居村'
 
@@ -798,6 +817,11 @@ class JPPostCodeBuilder:
                     elif kanji[1] == '阿寒郡鶴居村':
 
                         katakana.append('アカングンツルイムラ')
+                        results.append(katakana)
+
+                    elif kanji[1] == '旭川市':
+
+                        katakana.append('アサヒカワシ')
                         results.append(katakana)
 
             elif len(kanji) == 3:
