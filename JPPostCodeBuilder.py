@@ -59,6 +59,8 @@ class JPPostCodeBuilder:
                 results.append(address)
                 return results
 
+        address = []
+
         if first_three_digits == '079':
 
             address.append('北海道')
@@ -792,6 +794,240 @@ class JPPostCodeBuilder:
                 
                 return results
 
+        elif first_three_digits == '078':
+
+            address.append('北海道')
+            address.append('旭川市')
+
+            if last_four_digits == '8220':
+
+                address.append('１０条通')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8221':
+
+                address.append('１１条通')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8211':
+
+                address.append('１条通')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8212':
+
+                address.append('２条通')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8213':
+
+                address.append('３条通')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8214':
+
+                address.append('４条通')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8215':
+
+                address.append('５条通')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8216':
+
+                address.append('６条通')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8217':
+
+                address.append('７条通')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8218':
+
+                address.append('８条通')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8219':
+
+                address.append('９条通')
+                results.append(address)
+
+                return results
+
+        elif first_three_digits == '070':
+
+            address.append('北海道')
+            address.append('旭川市')
+
+            if last_four_digits == '0040':
+
+                address.append('１０条通')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '0031':
+
+                address.append('１条通')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '0032':
+
+                address.append('２条通')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '0052':
+
+                address.append('２条西')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '0033':
+
+                address.append('３条通')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '0053':
+
+                address.append('３条西')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '0971':
+
+                address.append('４区１条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '0972':
+
+                address.append('４区２条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '0973':
+
+                address.append('４区３条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '0034':
+
+                address.append('４条通')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '0054':
+
+                address.append('４条西')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '0035':
+
+                address.append('５条通')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '0055':
+
+                address.append('５条西')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '0036':
+
+                address.append('６条通')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '0056':
+
+                address.append('６条西')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '0037':
+
+                address.append('７条通')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '0057':
+
+                address.append('７条西')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '0038':
+
+                address.append('８条通')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '0058':
+
+                address.append('８条西')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '0039':
+
+                address.append('９条通')
+                results.append(address)
+
+                return results
+                
+            elif last_four_digits == '0059':
+
+                address.append('９条西')
+                results.append(address)
+
+                return results
+
         raise ValueError(self._emcreator.message('JPPostCodeBuilder.py','convertToAddress','post code error','the post code is an incompatible value.'))
         
     def furigana(self):
@@ -1326,7 +1562,121 @@ class JPPostCodeBuilder:
 
                             katakana.append('モホロロ')
                             results.append(katakana)
+
+                    elif kanji[1] == '旭川市':
+
+                        katakana.append('アサヒカワシ')
                         
+                        if kanji[2] == '１０条通':
+                            
+                            katakana.append('10ジョウドオリ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '１１条通':
+
+                            katakana.append('11ジョウドオリ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '１条通':
+
+                            katakana.append('1ジョウドオリ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '２条通':
+
+                            katakana.append('2ジョウドオリ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '２条西':
+
+                            katakana.append('2ジョウニシ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '３条通':
+
+                            katakana.append('3ジョウドオリ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '３条西':
+
+                            katakana.append('3ジョウニシ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '４区１条':
+
+                            katakana.append('4ク1ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '４区２条':
+
+                            katakana.append('4ク2ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '４区３条':
+
+                            katakana.append('4ク3ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '４条通':
+
+                            katakana.append('4ジョウドオリ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '４条西':
+
+                            katakana.append('4ジョウニシ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '５条通':
+
+                            katakana.append('5ジョウドオリ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '５条西':
+
+                            katakana.append('5ジョウニシ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '６条通':
+
+                            katakana.append('6ジョウドオリ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '６条西':
+
+                            katakana.append('6ジョウニシ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '７条通':
+
+                            katakana.append('7ジョウドオリ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '７条西':
+
+                            katakana.append('7ジョウニシ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '８条通':
+
+                            katakana.append('8ジョウドオリ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '８条西':
+
+                            katakana.append('8ジョウニシ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '９条通':
+
+                            katakana.append('9ジョウドオリ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '９条西':
+
+                            katakana.append('9ジョウニシ')
+                            results.append(katakana)
+
         if len(results) > 0:
             return results
 
