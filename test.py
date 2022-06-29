@@ -1,6 +1,7 @@
 from JPPostCodeBuilder import JPPostCodeBuilder
 
 post_code = ''
+
 #post_code = '079-1143'
 #post_code = '079-1134'
 #post_code = '079-1274'
@@ -47,6 +48,7 @@ post_code = ''
 #post_code = '079-1112'
 #post_code = '079-1113'
 #post_code = '079-1114'
+
 #post_code = '079-1100'
 
 #post_code = '085-0467'
@@ -77,6 +79,7 @@ post_code = ''
 #post_code = '085-0224'
 
 #post_code = '085-1200'
+
 #post_code = '085-1146'
 #post_code = '085-1145'
 #post_code = '085-1132'
@@ -100,7 +103,42 @@ post_code = ''
 #post_code = '085-1142'
 #post_code = '085-1213'
 #post_code = '085-1134'
+
 #post_code = '070-0000'
+
+#post_code = '070-0040'
+#post_code = '070-0031'
+#post_code = '070-0032'
+#post_code = '070-0052'
+#post_code = '070-0033'
+#post_code = '070-0053'
+#post_code = '070-0971'
+#post_code = '070-0972'
+#post_code = '070-0973'
+#post_code = '070-0034'
+#post_code = '070-0054'
+#post_code = '070-0035'
+#post_code = '070-0055'
+#post_code = '070-0036'
+#post_code = '070-0056'
+#post_code = '070-0037'
+#post_code = '070-0057'
+#post_code = '070-0038'
+#post_code = '070-0058'
+#post_code = '070-0039'
+#post_code = '070-0059'
+
+#post_code = '078-8220'
+#post_code = '078-8221'
+#post_code = '078-8211'
+#post_code = '078-8212'
+#post_code = '078-8213'
+#post_code = '078-8214'
+#post_code = '078-8215'
+#post_code = '078-8216'
+#post_code = '078-8217'
+#post_code = '078-8218'
+#post_code = '078-8219'
 
 try:
     jppc_builder = JPPostCodeBuilder(post_code)
