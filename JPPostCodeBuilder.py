@@ -1090,6 +1090,123 @@ class JPPostCodeBuilder:
 
                 return results
 
+            elif last_four_digits == '0822':
+
+                address.append('旭岡')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '0831':
+
+                address.append('旭町１条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '0832':
+
+                address.append('旭町２条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8051':
+
+                address.append('江丹別町嵐山')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8052':
+
+                address.append('江丹別町春日')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8053':
+
+                address.append('江丹別町共和')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '0841':
+
+                address.append('大町１条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '0842':
+
+                address.append('大町２条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '0843':
+
+                address.append('大町３条')
+                results.append(address)
+
+                return results
+
+        elif first_three_digits == '071':
+
+            address.append('北海道')
+            address.append('旭川市')
+
+            if last_four_digits == '1171':
+
+                address.append('江丹別町清水')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '1172':
+
+                address.append('江丹別町拓北')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '1173':
+
+                address.append('江丹別町中央')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '1174':
+
+                address.append('江丹別町富原')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '1175':
+
+                address.append('江丹別町中園')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '1176':
+
+                address.append('江丹別町西里')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '1177':
+
+                address.append('江丹別町芳野')
+                results.append(address)
+
+                return results
+
         raise ValueError(self._emcreator.message('JPPostCodeBuilder.py','convertToAddress','post code error','the post code is an incompatible value.'))
         
     def furigana(self):
@@ -1777,6 +1894,86 @@ class JPPostCodeBuilder:
                         elif kanji[2] == '曙北３条':
 
                             katakana.append('アケボノキタ3ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '旭岡':
+
+                            katakana.append('アサヒガオカ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '旭町１条':
+
+                            katakana.append('アサヒマチ1ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '旭町２条':
+
+                            katakana.append('アサヒマチ2ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '江丹別町嵐山':
+
+                            katakana.append('エタンベツチョウアラシヤマ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '江丹別町春日':
+
+                            katakana.append('エタンベツチョウカスガ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '江丹別町共和':
+
+                            katakana.append('エタンベツチョウキョウワ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '江丹別町清水':
+
+                            katakana.append('エタンベツチョウシミズ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '江丹別町拓北':
+
+                            katakana.append('エタンベツチョウタクホク')
+                            results.append(katakana)
+
+                        elif kanji[2] == '江丹別町中央':
+
+                            katakana.append('エタンベツチョウチュウオウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '江丹別町富原':
+
+                            katakana.append('エタンベツチョウトミハラ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '江丹別町中園':
+
+                            katakana.append('エタンベツチョウナカゾノ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '江丹別町西里':
+
+                            katakana.append('エタンベツチョウニシサト')
+                            results.append(katakana)
+
+                        elif kanji[2] == '江丹別町芳野':
+
+                            katakana.append('エタンベツチョウヨシノ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '大町１条':
+
+                            katakana.append('オオマチ1ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '大町２条':
+
+                            katakana.append('オオマチ2ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '大町３条':
+
+                            katakana.append('オオマチ3ジョウ')
                             results.append(katakana)
 
         if len(results) > 0:
