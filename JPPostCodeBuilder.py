@@ -66,7 +66,34 @@ class JPPostCodeBuilder:
             address.append('北海道')
             address.append('赤平市')
 
-            if last_four_digits == '1143':
+            if last_four_digits == '8401':
+
+                address[1] = '旭川市'
+
+                address.append('秋月１条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8402':
+
+                address[1] = '旭川市'
+
+                address.append('秋月２条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8403':
+
+                address[1] = '旭川市'
+
+                address.append('秋月３条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '1143':
 
                 address.append('赤平')
                 results.append(address)
@@ -1028,6 +1055,41 @@ class JPPostCodeBuilder:
 
                 return results
 
+            elif last_four_digits == '0061':
+
+                address.append('曙１条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '0062':
+
+                address.append('曙２条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '0063':
+
+                address.append('曙３条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '0072':
+
+                address.append('曙北２条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '0073':
+
+                address.append('曙北３条')
+                results.append(address)
+
+                return results
+
         raise ValueError(self._emcreator.message('JPPostCodeBuilder.py','convertToAddress','post code error','the post code is an incompatible value.'))
         
     def furigana(self):
@@ -1675,6 +1737,46 @@ class JPPostCodeBuilder:
                         elif kanji[2] == '９条西':
 
                             katakana.append('9ジョウニシ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '秋月１条':
+
+                            katakana.append('アキツキ1ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '秋月２条':
+
+                            katakana.append('アキツキ2ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '秋月３条':
+
+                            katakana.append('アキツキ3ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '曙１条':
+
+                            katakana.append('アケボノ1ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '曙２条':
+
+                            katakana.append('アケボノ2ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '曙３条':
+
+                            katakana.append('アケボノ3ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '曙北２条':
+
+                            katakana.append('アケボノキタ2ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '曙北３条':
+
+                            katakana.append('アケボノキタ3ジョウ')
                             results.append(katakana)
 
         if len(results) > 0:
