@@ -952,6 +952,69 @@ class JPPostCodeBuilder:
 
                 return results
 
+            elif last_four_digits == '8311':
+
+                address.append('神楽岡１条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8312':
+
+                address.append('神楽岡２条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8313':
+
+                address.append('神楽岡３条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8314':
+
+                address.append('神楽岡４条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8315':
+
+                address.append('神楽岡５条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8316':
+
+                address.append('神楽岡６条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8317':
+
+                address.append('神楽岡７条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8318':
+
+                address.append('神楽岡８条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8319':
+
+                address.append('神楽岡９条')
+                results.append(address)
+
+                return results
+
         elif first_three_digits == '070':
 
             address.append('北海道')
@@ -2142,6 +2205,51 @@ class JPPostCodeBuilder:
                         elif kanji[2] == '神楽岡１６条':
 
                             katakana.append('カグラオカ16ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '神楽岡１条':
+
+                            katakana.append('カグラオカ1ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '神楽岡２条':
+
+                            katakana.append('カグラオカ2ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '神楽岡３条':
+
+                            katakana.append('カグラオカ3ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '神楽岡４条':
+
+                            katakana.append('カグラオカ4ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '神楽岡５条':
+
+                            katakana.append('カグラオカ5ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '神楽岡６条':
+
+                            katakana.append('カグラオカ6ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '神楽岡７条':
+
+                            katakana.append('カグラオカ7ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '神楽岡８条':
+
+                            katakana.append('カグラオカ8ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '神楽岡９条':
+
+                            katakana.append('カグラオカ9ジョウ')
                             results.append(katakana)
 
         if len(results) > 0:
