@@ -1015,6 +1015,13 @@ class JPPostCodeBuilder:
 
                 return results
 
+            elif last_four_digits == '8327':
+
+                address.append('神楽岡公園')
+                results.append(address)
+
+                return results
+
         elif first_three_digits == '070':
 
             address.append('北海道')
@@ -1310,6 +1317,13 @@ class JPPostCodeBuilder:
             elif last_four_digits == '8007':
 
                 address.append('神楽７条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '0041':
+
+                address.append('上常盤町')
                 results.append(address)
 
                 return results
@@ -2250,6 +2264,16 @@ class JPPostCodeBuilder:
                         elif kanji[2] == '神楽岡９条':
 
                             katakana.append('カグラオカ9ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '神楽岡公園':
+
+                            katakana.append('カグラオカコウエン')
+                            results.append(katakana)
+
+                        elif kanji[2] == '上常盤町':
+
+                            katakana.append('カミトキワチョウ')
                             results.append(katakana)
 
         if len(results) > 0:
