@@ -1022,6 +1022,20 @@ class JPPostCodeBuilder:
 
                 return results
 
+            elif last_four_digits == '0185':
+
+                address.append('神居町神居古潭')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '0186':
+
+                address.append('神居町西丘')
+                results.append(address)
+
+                return results
+
         elif first_three_digits == '070':
 
             address.append('北海道')
@@ -1328,6 +1342,132 @@ class JPPostCodeBuilder:
 
                 return results
 
+            elif last_four_digits == '8011':
+
+                address.append('神居１条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8012':
+
+                address.append('神居２条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8013':
+
+                address.append('神居３条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8014':
+
+                address.append('神居４条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8015':
+
+                address.append('神居５条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8016':
+
+                address.append('神居６条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8017':
+
+                address.append('神居７条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8018':
+
+                address.append('神居８条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8019':
+
+                address.append('神居９条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8033':
+
+                address.append('神居町雨紛')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8034':
+
+                address.append('神居町上雨紛')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8026':
+
+                address.append('神居町神岡')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8032':
+
+                address.append('神居町共栄')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8031':
+
+                address.append('神居町神華')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8022':
+
+                address.append('神居町台場')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8021':
+
+                address.append('神居町忠和')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8025':
+
+                address.append('神居町富岡')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8024':
+
+                address.append('神居町富沢')
+                results.append(address)
+
+                return results
+
         elif first_three_digits == '071':
 
             address.append('北海道')
@@ -1382,6 +1522,25 @@ class JPPostCodeBuilder:
 
                 return results
 
+        elif first_three_digits == '074':
+
+            address.append('北海道')
+            address.append('旭川市')
+
+            if last_four_digits == '1182':
+
+                address.append('神居町豊里')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '1181':
+
+                address.append('神居町西丘')
+                results.append(address)
+
+                return results
+            
         raise ValueError(self._emcreator.message('JPPostCodeBuilder.py','convertToAddress','post code error','the post code is an incompatible value.'))
         
     def furigana(self):
@@ -2274,6 +2433,111 @@ class JPPostCodeBuilder:
                         elif kanji[2] == '上常盤町':
 
                             katakana.append('カミトキワチョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '神居１条':
+
+                            katakana.append('カムイ1ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '神居２条':
+
+                            katakana.append('カムイ2ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '神居３条':
+
+                            katakana.append('カムイ3ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '神居４条':
+
+                            katakana.append('カムイ4ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '神居５条':
+
+                            katakana.append('カムイ5ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '神居６条':
+
+                            katakana.append('カムイ6ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '神居７条':
+
+                            katakana.append('カムイ7ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '神居８条':
+
+                            katakana.append('カムイ8ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '神居９条':
+
+                            katakana.append('カムイ9ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '神居町雨紛':
+
+                            katakana.append('カムイチョウウブン')
+                            results.append(katakana)
+
+                        elif kanji[2] == '神居町上雨紛':
+
+                            katakana.append('カムイチョウカミウブン')
+                            results.append(katakana)
+
+                        elif kanji[2] == '神居町神岡':
+
+                            katakana.append('カムイチョウカミオカ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '神居町神居古潭':
+
+                            katakana.append('カムイチョウカムイコタン')
+                            results.append(katakana)
+
+                        elif kanji[2] == '神居町共栄':
+
+                            katakana.append('カムイチョウキョウエイ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '神居町神華':
+
+                            katakana.append('カムイチョウシンカ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '神居町台場':
+
+                            katakana.append('カムイチョウダイバ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '神居町忠和':
+
+                            katakana.append('カムイチョウチュウワ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '神居町富岡':
+
+                            katakana.append('カムイチョウトミオカ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '神居町富沢':
+
+                            katakana.append('カムイチョウトミサワ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '神居町豊里':
+
+                            katakana.append('カムイチョウトヨサト')
+                            results.append(katakana)
+
+                        elif kanji[2] == '神居町西丘':
+
+                            katakana.append('カムイチョウニシオカ')
                             results.append(katakana)
 
         if len(results) > 0:
