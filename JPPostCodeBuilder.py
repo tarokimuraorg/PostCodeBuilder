@@ -1036,6 +1036,69 @@ class JPPostCodeBuilder:
 
                 return results
 
+            elif last_four_digits == '8371':
+
+                address.append('旭神１条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8372':
+
+                address.append('旭神２条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8373':
+
+                address.append('旭神３条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8308':
+
+                address.append('旭神町')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8271':
+
+                address.append('工業団地１条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8272':
+
+                address.append('工業団地２条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8273':
+
+                address.append('工業団地３条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8274':
+
+                address.append('工業団地４条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8275':
+
+                address.append('工業団地５条')
+                results.append(address)
+
+                return results
+
         elif first_three_digits == '070':
 
             address.append('北海道')
@@ -1541,6 +1604,13 @@ class JPPostCodeBuilder:
             elif last_four_digits == '0817':
 
                 address.append('川端町７条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '0029':
+
+                address.append('金星町')
                 results.append(address)
 
                 return results
@@ -2670,6 +2740,56 @@ class JPPostCodeBuilder:
                         elif kanji[2] == '川端町７条':
 
                             katakana.append('カワバタチョウ7ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '旭神１条':
+
+                            katakana.append('キョクシン1ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '旭神２条':
+
+                            katakana.append('キョクシン2ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '旭神３条':
+
+                            katakana.append('キョクシン3ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '旭神町':
+
+                            katakana.append('キョクシンチョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '金星町':
+
+                            katakana.append('キンセイチョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '工業団地１条':
+
+                            katakana.append('コウギョウダンチ1ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '工業団地２条':
+
+                            katakana.append('コウギョウダンチ2ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '工業団地３条':
+
+                            katakana.append('コウギョウダンチ3ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '工業団地４条':
+
+                            katakana.append('コウギョウダンチ4ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '工業団地５条':
+
+                            katakana.append('コウギョウダンチ5ジョウ')
                             results.append(katakana)
 
         if len(results) > 0:
