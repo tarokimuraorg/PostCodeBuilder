@@ -1496,6 +1496,55 @@ class JPPostCodeBuilder:
 
                 return results
 
+            elif last_four_digits == '0811':
+
+                address.append('川端町１条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '0812':
+
+                address.append('川端町２条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '0813':
+
+                address.append('川端町３条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '0814':
+
+                address.append('川端町４条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '0815':
+
+                address.append('川端町５条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '0816':
+
+                address.append('川端町６条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '0817':
+
+                address.append('川端町７条')
+                results.append(address)
+
+                return results
+
         elif first_three_digits == '071':
 
             address.append('北海道')
@@ -2586,6 +2635,41 @@ class JPPostCodeBuilder:
                         elif kanji[2] == '亀吉３条':
 
                             katakana.append('カメキチ3ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '川端町１条':
+
+                            katakana.append('カワバタチョウ1ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '川端町２条':
+
+                            katakana.append('カワバタチョウ2ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '川端町３条':
+
+                            katakana.append('カワバタチョウ3ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '川端町４条':
+
+                            katakana.append('カワバタチョウ4ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '川端町５条':
+
+                            katakana.append('カワバタチョウ5ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '川端町６条':
+
+                            katakana.append('カワバタチョウ6ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '川端町７条':
+
+                            katakana.append('カワバタチョウ7ジョウ')
                             results.append(katakana)
 
         if len(results) > 0:
