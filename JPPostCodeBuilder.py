@@ -1468,6 +1468,34 @@ class JPPostCodeBuilder:
 
                 return results
 
+            elif last_four_digits == '8023':
+
+                address.append('神居町春志内')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '0081':
+
+                address.append('亀吉１条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '0082':
+
+                address.append('亀吉２条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '0083':
+
+                address.append('亀吉３条')
+                results.append(address)
+
+                return results
+
         elif first_three_digits == '071':
 
             address.append('北海道')
@@ -2538,6 +2566,26 @@ class JPPostCodeBuilder:
                         elif kanji[2] == '神居町西丘':
 
                             katakana.append('カムイチョウニシオカ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '神居町春志内':
+
+                            katakana.append('カムイチョウハルシナイ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '亀吉１条':
+
+                            katakana.append('カメキチ1ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '亀吉２条':
+
+                            katakana.append('カメキチ2ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '亀吉３条':
+
+                            katakana.append('カメキチ3ジョウ')
                             results.append(katakana)
 
         if len(results) > 0:
