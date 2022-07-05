@@ -1,3 +1,4 @@
+from turtle import pos
 from JPPostCodeBuilder import JPPostCodeBuilder
 
 post_code = ''
@@ -194,7 +195,8 @@ post_code = ''
 #post_code = '070-0814'
 #post_code = '070-0815'
 #post_code = '070-0816'
-post_code = '070-0817'
+#post_code = '070-0817'
+#post_code = '070-0029'
 
 #post_code = '071-1171'
 #post_code = '071-1172'
@@ -223,6 +225,15 @@ post_code = '070-0817'
 #post_code = '078-8327'
 #post_code = '078-0185'
 #post_code = '078-0186'
+#post_code = '078-8371'
+#post_code = '078-8372'
+#post_code = '078-8373'
+#post_code = '078-8308'
+#post_code = '078-8271'
+#post_code = '078-8272'
+#post_code = '078-8273'
+#post_code = '078-8274'
+post_code = '078-8275'
 
 #post_code = '074-1182'
 #post_code = '074-1181'
