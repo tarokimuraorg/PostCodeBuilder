@@ -1718,6 +1718,41 @@ class JPPostCodeBuilder:
 
                 return results
 
+            elif last_four_digits == '8141':
+
+                address.append('春光台１条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8142':
+
+                address.append('春光台２条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8143':
+
+                address.append('春光台３条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8144':
+
+                address.append('春光台４条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8145':
+
+                address.append('春光台５条')
+                results.append(address)
+
+                return results
+
         elif first_three_digits == '074':
 
             address.append('北海道')
@@ -2874,6 +2909,31 @@ class JPPostCodeBuilder:
                         elif kanji[2] == '春光７条':
 
                             katakana.append('シュンコウ7ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '春光台１条':
+
+                            katakana.append('シュンコウダイ1ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '春光台２条':
+
+                            katakana.append('シュンコウダイ2ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '春光台３条':
+
+                            katakana.append('シュンコウダイ3ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '春光台４条':
+
+                            katakana.append('シュンコウダイ4ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '春光台５条':
+
+                            katakana.append('シュンコウダイ5ジョウ')
                             results.append(katakana)
 
         if len(results) > 0:
