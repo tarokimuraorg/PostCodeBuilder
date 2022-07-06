@@ -1615,6 +1615,55 @@ class JPPostCodeBuilder:
 
                 return results
 
+            elif last_four_digits == '0871':
+
+                address.append('春光１条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '0872':
+
+                address.append('春光２条')
+                results.append(address)
+
+                return results
+                
+            elif last_four_digits == '0873':
+
+                address.append('春光３条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '0874':
+
+                address.append('春光４条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '0875':
+
+                address.append('春光５条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '0876':
+
+                address.append('春光６条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '0877':
+
+                address.append('春光７条')
+                results.append(address)
+
+                return results
+
         elif first_three_digits == '071':
 
             address.append('北海道')
@@ -2790,6 +2839,41 @@ class JPPostCodeBuilder:
                         elif kanji[2] == '工業団地５条':
 
                             katakana.append('コウギョウダンチ5ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '春光１条':
+
+                            katakana.append('シュンコウ1ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '春光２条':
+
+                            katakana.append('シュンコウ2ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '春光３条':
+
+                            katakana.append('シュンコウ3ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '春光４条':
+
+                            katakana.append('シュンコウ4ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '春光５条':
+
+                            katakana.append('シュンコウ5ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '春光６条':
+
+                            katakana.append('シュンコウ6ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '春光７条':
+
+                            katakana.append('シュンコウ7ジョウ')
                             results.append(katakana)
 
         if len(results) > 0:
