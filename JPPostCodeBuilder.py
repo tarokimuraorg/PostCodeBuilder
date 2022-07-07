@@ -1664,6 +1664,41 @@ class JPPostCodeBuilder:
 
                 return results
 
+            elif last_four_digits == '0902':
+
+                address.append('春光町')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '0014':
+
+                address.append('新星町')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '0001':
+
+                address.append('新富１条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '0002':
+
+                address.append('新富２条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '0003':
+
+                address.append('新富３条')
+                results.append(address)
+
+                return results
+
         elif first_three_digits == '071':
 
             address.append('北海道')
@@ -2934,6 +2969,31 @@ class JPPostCodeBuilder:
                         elif kanji[2] == '春光台５条':
 
                             katakana.append('シュンコウダイ5ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '春光町':
+
+                            katakana.append('シュンコウチョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '新星町':
+
+                            katakana.append('シンセイチョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '新富１条':
+
+                            katakana.append('シントミ1ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '新富２条':
+
+                            katakana.append('シントミ2ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '新富３条':
+
+                            katakana.append('シントミ3ジョウ')
                             results.append(katakana)
 
         if len(results) > 0:
