@@ -1788,6 +1788,62 @@ class JPPostCodeBuilder:
 
                 return results
 
+            elif last_four_digits == '8131':
+
+                address.append('末広１条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8132':
+
+                address.append('末広２条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8133':
+
+                address.append('末広３条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8134':
+
+                address.append('末広４条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8135':
+
+                address.append('末広５条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8136':
+
+                address.append('末広６条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8137':
+
+                address.append('末広７条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8138':
+
+                address.append('末広８条')
+                results.append(address)
+
+                return results
+
         elif first_three_digits == '074':
 
             address.append('北海道')
@@ -2994,6 +3050,46 @@ class JPPostCodeBuilder:
                         elif kanji[2] == '新富３条':
 
                             katakana.append('シントミ3ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '末広１条':
+
+                            katakana.append('スエヒロ1ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '末広２条':
+
+                            katakana.append('スエヒロ2ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '末広３条':
+
+                            katakana.append('スエヒロ3ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '末広４条':
+
+                            katakana.append('スエヒロ4ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '末広５条':
+
+                            katakana.append('スエヒロ5ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '末広６条':
+
+                            katakana.append('スエヒロ6ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '末広７条':
+
+                            katakana.append('スエヒロ7ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '末広８条':
+
+                            katakana.append('スエヒロ8ジョウ')
                             results.append(katakana)
 
         if len(results) > 0:
