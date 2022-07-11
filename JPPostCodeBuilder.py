@@ -1727,6 +1727,125 @@ class JPPostCodeBuilder:
 
                 return results
 
+            elif last_four_digits == '0010':
+
+                address.append('大雪通')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8061':
+
+                address.append('高砂台')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8027':
+
+                address.append('台場東')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8071':
+
+                address.append('台場１条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8072':
+
+                address.append('台場２条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8073':
+
+                address.append('台場３条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8074':
+
+                address.append('台場４条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '0821':
+
+                address.append('近文町')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8041':
+
+                address.append('忠和１条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8042':
+
+                address.append('忠和２条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8043':
+
+                address.append('忠和３条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8044':
+
+                address.append('忠和４条')
+                results.append(address)
+
+                return results
+            
+            elif last_four_digits == '8045':
+
+                address.append('忠和５条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8046':
+
+                address.append('忠和６条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8047':
+
+                address.append('忠和７条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8048':
+
+                address.append('忠和８条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8049':
+
+                address.append('忠和９条')
+                results.append(address)
+
+                return results
+
         elif first_three_digits == '071':
 
             address.append('北海道')
@@ -3174,6 +3293,91 @@ class JPPostCodeBuilder:
                         elif kanji[2] == '住吉７条':
 
                             katakana.append('スミヨシ7ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '大雪通':
+
+                            katakana.append('タイセツドオリ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '高砂台':
+
+                            katakana.append('タカサゴダイ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '台場１条':
+
+                            katakana.append('ダイバ1ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '台場２条':
+
+                            katakana.append('ダイバ2ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '台場３条':
+
+                            katakana.append('ダイバ3ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '台場４条':
+
+                            katakana.append('ダイバ4ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '台場東':
+
+                            katakana.append('ダイバヒガシ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '近文町':
+
+                            katakana.append('チカブミチョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '忠和１条':
+
+                            katakana.append('チュウワ1ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '忠和２条':
+
+                            katakana.append('チュウワ2ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '忠和３条':
+
+                            katakana.append('チュウワ3ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '忠和４条':
+
+                            katakana.append('チュウワ4ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '忠和５条':
+
+                            katakana.append('チュウワ5ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '忠和６条':
+
+                            katakana.append('チュウワ6ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '忠和７条':
+
+                            katakana.append('チュウワ7ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '忠和８条':
+
+                            katakana.append('チュウワ8ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '忠和９条':
+
+                            katakana.append('チュウワ9ジョウ')
                             results.append(katakana)
 
         if len(results) > 0:
