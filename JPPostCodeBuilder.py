@@ -1169,6 +1169,69 @@ class JPPostCodeBuilder:
 
                 return results
 
+            elif last_four_digits == '8341':
+
+                address.append('東光１条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8360':
+
+                address.append('東光２０条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8361':
+
+                address.append('東光２１条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8362':
+
+                address.append('東光２２条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8363':
+
+                address.append('東光２３条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8364':
+
+                address.append('東光２４条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8365':
+
+                address.append('東光２５条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8366':
+
+                address.append('東光２６条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8367':
+
+                address.append('東光２７条')
+                results.append(address)
+
+                return results
+
         elif first_three_digits == '070':
 
             address.append('北海道')
@@ -3498,6 +3561,51 @@ class JPPostCodeBuilder:
                         elif kanji[2] == '東光１９条':
 
                             katakana.append('トウコウ19ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '東光１条':
+
+                            katakana.append('トウコウ1ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '東光２０条':
+
+                            katakana.append('トウコウ20ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '東光２１条':
+
+                            katakana.append('トウコウ21ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '東光２２条':
+
+                            katakana.append('トウコウ22ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '東光２３条':
+
+                            katakana.append('トウコウ23ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '東光２４条':
+
+                            katakana.append('トウコウ24ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '東光２５条':
+
+                            katakana.append('トウコウ25ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '東光２６条':
+
+                            katakana.append('トウコウ26ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '東光２７条':
+
+                            katakana.append('トウコウ27ジョウ')
                             results.append(katakana)
 
         if len(results) > 0:
