@@ -1288,6 +1288,55 @@ class JPPostCodeBuilder:
 
                 return results
 
+            elif last_four_digits == '8240':
+
+                address.append('豊岡１０条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8241':
+
+                address.append('豊岡１１条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8242':
+
+                address.append('豊岡１２条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8243':
+
+                address.append('豊岡１３条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8244':
+
+                address.append('豊岡１４条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8245':
+
+                address.append('豊岡１５条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8246':
+
+                address.append('豊岡１６条')
+                results.append(address)
+
+                return results
+
         elif first_three_digits == '070':
 
             address.append('北海道')
@@ -2031,6 +2080,20 @@ class JPPostCodeBuilder:
             elif last_four_digits == '8049':
 
                 address.append('忠和９条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '0044':
+
+                address.append('常磐公園')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '0043':
+
+                address.append('常盤通')
                 results.append(address)
 
                 return results
@@ -3702,6 +3765,51 @@ class JPPostCodeBuilder:
                         elif kanji[2] == '東光９条':
 
                             katakana.append('トウコウ9ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '常磐公園':
+
+                            katakana.append('トキワコウエン')
+                            results.append(katakana)
+
+                        elif kanji[2] == '常盤通':
+
+                            katakana.append('トキワドオリ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '豊岡１０条':
+
+                            katakana.append('トヨオカ10ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '豊岡１１条':
+
+                            katakana.append('トヨオカ11ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '豊岡１２条':
+
+                            katakana.append('トヨオカ12ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '豊岡１３条':
+
+                            katakana.append('トヨオカ13ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '豊岡１４条':
+
+                            katakana.append('トヨオカ14ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '豊岡１５条':
+
+                            katakana.append('トヨオカ15ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '豊岡１６条':
+
+                            katakana.append('トヨオカ16ジョウ')
                             results.append(katakana)
 
         if len(results) > 0:
