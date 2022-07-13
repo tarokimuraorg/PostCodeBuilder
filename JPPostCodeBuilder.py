@@ -1337,6 +1337,69 @@ class JPPostCodeBuilder:
 
                 return results
 
+            elif last_four_digits == '8231':
+
+                address.append('豊岡１条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8232':
+
+                address.append('豊岡２条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8233':
+
+                address.append('豊岡３条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8234':
+
+                address.append('豊岡４条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8235':
+
+                address.append('豊岡５条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8236':
+
+                address.append('豊岡６条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8237':
+
+                address.append('豊岡７条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8238':
+
+                address.append('豊岡８条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8239':
+
+                address.append('豊岡９条')
+                results.append(address)
+
+                return results
+
         elif first_three_digits == '070':
 
             address.append('北海道')
@@ -3810,6 +3873,51 @@ class JPPostCodeBuilder:
                         elif kanji[2] == '豊岡１６条':
 
                             katakana.append('トヨオカ16ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '豊岡１条':
+
+                            katakana.append('トヨオカ1ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '豊岡２条':
+
+                            katakana.append('トヨオカ2ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '豊岡３条':
+
+                            katakana.append('トヨオカ3ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '豊岡４条':
+
+                            katakana.append('トヨオカ4ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '豊岡５条':
+
+                            katakana.append('トヨオカ5ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '豊岡６条':
+
+                            katakana.append('トヨオカ6ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '豊岡７条':
+
+                            katakana.append('トヨオカ7ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '豊岡８条':
+
+                            katakana.append('トヨオカ8ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '豊岡９条':
+
+                            katakana.append('トヨオカ9ジョウ')
                             results.append(katakana)
 
         if len(results) > 0:
