@@ -93,6 +93,51 @@ class JPPostCodeBuilder:
 
                 return results
 
+            elif last_four_digits == '8420':
+
+                address[1] = '旭川市'
+
+                address.append('永山１０条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8421':
+
+                address[1] = '旭川市'
+
+                address.append('永山１１条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8422':
+
+                address[1] = '旭川市'
+
+                address.append('永山１２条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8423':
+
+                address[1] = '旭川市'
+
+                address.append('永山１３条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8424':
+
+                address[1] = '旭川市'
+
+                address.append('永山１４条')
+                results.append(address)
+
+                return results
+
             elif last_four_digits == '1143':
 
                 address.append('赤平')
@@ -2161,6 +2206,13 @@ class JPPostCodeBuilder:
 
                 return results
 
+            elif last_four_digits == '0042':
+
+                address.append('中常盤町')
+                results.append(address)
+
+                return results
+
         elif first_three_digits == '071':
 
             address.append('北海道')
@@ -3918,6 +3970,36 @@ class JPPostCodeBuilder:
                         elif kanji[2] == '豊岡９条':
 
                             katakana.append('トヨオカ9ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '中常盤町':
+
+                            katakana.append('ナカトキワチョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '永山１０条':
+
+                            katakana.append('ナガヤマ10ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '永山１１条':
+
+                            katakana.append('ナガヤマ11ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '永山１２条':
+
+                            katakana.append('ナガヤマ12ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '永山１３条':
+
+                            katakana.append('ナガヤマ13ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '永山１４条':
+
+                            katakana.append('ナガヤマ14ジョウ')
                             results.append(katakana)
 
         if len(results) > 0:
