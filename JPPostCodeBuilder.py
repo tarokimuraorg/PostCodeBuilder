@@ -255,6 +255,15 @@ class JPPostCodeBuilder:
 
                 return results
 
+            elif last_four_digits == '8431':
+
+                address[1] = '旭川市'
+
+                address.append('永山町')
+                results.append(address)
+
+                return results
+
             elif last_four_digits == '1143':
 
                 address.append('赤平')
@@ -1562,6 +1571,62 @@ class JPPostCodeBuilder:
 
                 return results
 
+            elif last_four_digits == '8381':
+
+                address.append('西神楽１線')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8382':
+
+                address.append('西神楽２線')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8383':
+
+                address.append('西神楽３線')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8821':
+
+                address.append('西御料１条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8822':
+
+                address.append('西御料２条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8823':
+
+                address.append('西御料３条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8824':
+
+                address.append('西御料４条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8825':
+
+                address.append('西御料５条')
+                results.append(address)
+
+                return results
+
         elif first_three_digits == '070':
 
             address.append('北海道')
@@ -2330,6 +2395,13 @@ class JPPostCodeBuilder:
 
                 return results
 
+            elif last_four_digits == '0824':
+
+                address.append('錦町')
+                results.append(address)
+
+                return results
+
         elif first_three_digits == '071':
 
             address.append('北海道')
@@ -2492,6 +2564,55 @@ class JPPostCodeBuilder:
             elif last_four_digits == '8123':
 
                 address.append('末広東３条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '0184':
+
+                address.append('西神楽４線')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '0185':
+
+                address.append('西神楽５線')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '0173':
+
+                address.append('西神楽北１条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '0174':
+
+                address.append('西神楽北２条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '0186':
+
+                address.append('西神楽南')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '0171':
+
+                address.append('西神楽南１条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '0172':
+
+                address.append('西神楽南２条')
                 results.append(address)
 
                 return results
@@ -4182,6 +4303,91 @@ class JPPostCodeBuilder:
                         elif kanji[2] == '永山北４条':
 
                             katakana.append('ナガヤマキタ4ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '永山町':
+
+                            katakana.append('ナガヤマチョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '西神楽１線':
+
+                            katakana.append('ニシカグラ1セン')
+                            results.append(katakana)
+
+                        elif kanji[2] == '西神楽２線':
+
+                            katakana.append('ニシカグラ2セン')
+                            results.append(katakana)
+
+                        elif kanji[2] == '西神楽３線':
+
+                            katakana.append('ニシカグラ3セン')
+                            results.append(katakana)
+
+                        elif kanji[2] == '西神楽４線':
+
+                            katakana.append('ニシカグラ4セン')
+                            results.append(katakana)
+
+                        elif kanji[2] == '西神楽５線':
+
+                            katakana.append('ニシカグラ5セン')
+                            results.append(katakana)
+
+                        elif kanji[2] == '西神楽北１条':
+
+                            katakana.append('ニシカグラキタ1ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '西神楽北２条':
+
+                            katakana.append('ニシカグラキタ2ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '西神楽南':
+
+                            katakana.append('ニシカグラミナミ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '西神楽南１条':
+
+                            katakana.append('ニシカグラミナミ1ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '西神楽南２条':
+
+                            katakana.append('ニシカグラミナミ2ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '錦町':
+
+                            katakana.append('ニシキマチ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '西御料１条':
+
+                            katakana.append('ニシゴリョウ1ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '西御料２条':
+
+                            katakana.append('ニシゴリョウ2ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '西御料３条':
+
+                            katakana.append('ニシゴリョウ3ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '西御料４条':
+
+                            katakana.append('ニシゴリョウ4ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '西御料５条':
+
+                            katakana.append('ニシゴリョウ5ジョウ')
                             results.append(katakana)
 
         if len(results) > 0:
