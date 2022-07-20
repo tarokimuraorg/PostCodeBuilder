@@ -1,4 +1,3 @@
-from turtle import pos
 from JPPostCodeBuilder import JPPostCodeBuilder
 
 post_code = ''
