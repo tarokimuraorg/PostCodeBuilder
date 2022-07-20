@@ -1627,6 +1627,125 @@ class JPPostCodeBuilder:
 
                 return results
 
+            elif last_four_digits == '8251':
+
+                address.append('東旭川北１条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8252':
+
+                address.append('東旭川北２条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8253':
+
+                address.append('東旭川北３条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8207':
+
+                address.append('東旭川町上兵村')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8340':
+
+                address.append('東旭川町共栄')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8368':
+
+                address.append('東旭川町旭正')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8205':
+
+                address.append('東旭川町倉沼')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8204':
+
+                address.append('東旭川町桜岡')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8208':
+
+                address.append('東旭川町下兵村')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8206':
+
+                address.append('東旭川町忠別')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8202':
+
+                address.append('東旭川町豊田')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '1272':
+
+                address.append('東旭川町豊田')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8201':
+
+                address.append('東旭川町東桜岡')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '1271':
+
+                address.append('東旭川町東桜岡')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8203':
+
+                address.append('東旭川町日ノ出')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '1274':
+
+                address.append('東旭川町瑞穂')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '1273':
+
+                address.append('東旭川町米原')
+                results.append(address)
+
+                return results
+
         elif first_three_digits == '070':
 
             address.append('北海道')
@@ -4532,6 +4651,81 @@ class JPPostCodeBuilder:
                         elif kanji[2] == '東８条':
 
                             katakana.append('ヒガシ8ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '東旭川北１条':
+
+                            katakana.append('ヒガシアサヒカワキタ1ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '東旭川北２条':
+
+                            katakana.append('ヒガシアサヒカワキタ2ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '東旭川北３条':
+
+                            katakana.append('ヒガシアサヒカワキタ3ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '東旭川町上兵村':
+
+                            katakana.append('ヒガシアサヒカワチョウカミヘイソン')
+                            results.append(katakana)
+
+                        elif kanji[2] == '東旭川町共栄':
+
+                            katakana.append('ヒガシアサヒカワチョウキョウエイ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '東旭川町旭正':
+
+                            katakana.append('ヒガシアサヒカワチョウキョクセイ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '東旭川町倉沼':
+
+                            katakana.append('ヒガシアサヒカワチョウクラヌマ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '東旭川町桜岡':
+
+                            katakana.append('ヒガシアサヒカワチョウサクラオカ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '東旭川町下兵村':
+
+                            katakana.append('ヒガシアサヒカワチョウシモヘイソン')
+                            results.append(katakana)
+
+                        elif kanji[2] == '東旭川町忠別':
+
+                            katakana.append('ヒガシアサヒカワチョウチュウベツ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '東旭川町豊田':
+
+                            katakana.append('ヒガシアサヒカワチョウトヨタ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '東旭川町東桜岡':
+
+                            katakana.append('ヒガシアサヒカワチョウヒガシサクラオカ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '東旭川町日ノ出':
+
+                            katakana.append('ヒガシアサヒカワチョウヒノデ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '東旭川町瑞穂':
+
+                            katakana.append('ヒガシアサヒカワチョウミズホ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '東旭川町米原':
+
+                            katakana.append('ヒガシアサヒカワチョウヨネハラ')
                             results.append(katakana)
 
         if len(results) > 0:
