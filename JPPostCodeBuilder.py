@@ -1746,6 +1746,20 @@ class JPPostCodeBuilder:
 
                 return results
 
+            elif last_four_digits == '8261':
+
+                address.append('東旭川南１条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8262':
+
+                address.append('東旭川南２条')
+                results.append(address)
+
+                return results
+
         elif first_three_digits == '070':
 
             address.append('北海道')
@@ -2605,6 +2619,13 @@ class JPPostCodeBuilder:
 
                 return results
 
+            elif last_four_digits == '0825':
+
+                address.append('北門町')
+                results.append(address)
+
+                return results
+
         elif first_three_digits == '071':
 
             address.append('北海道')
@@ -2816,6 +2837,174 @@ class JPPostCodeBuilder:
             elif last_four_digits == '0172':
 
                 address.append('西神楽南２条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8160':
+
+                address.append('東鷹栖１０線')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8161':
+
+                address.append('東鷹栖１１線')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8162':
+
+                address.append('東鷹栖１２線')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8163':
+
+                address.append('東鷹栖１３線')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8164':
+
+                address.append('東鷹栖１４線')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8165':
+
+                address.append('東鷹栖１５線')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8101':
+
+                address.append('東鷹栖１条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8151':
+
+                address.append('東鷹栖１線')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8102':
+
+                address.append('東鷹栖２条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8152':
+
+                address.append('東鷹栖２線')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8103':
+
+                address.append('東鷹栖３条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8153':
+
+                address.append('東鷹栖３線')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8104':
+
+                address.append('東鷹栖４条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8154':
+
+                address.append('東鷹栖４線')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8155':
+
+                address.append('東鷹栖５線')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8156':
+
+                address.append('東鷹栖６線')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8157':
+
+                address.append('東鷹栖７線')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8158':
+
+                address.append('東鷹栖８線')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8159':
+
+                address.append('東鷹栖９線')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8111':
+
+                address.append('東鷹栖東１条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8114':
+
+                address.append('東鷹栖東１線')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8112':
+
+                address.append('東鷹栖東２条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8113':
+
+                address.append('東鷹栖東３条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8171':
+
+                address.append('東山')
                 results.append(address)
 
                 return results
@@ -4726,6 +4915,141 @@ class JPPostCodeBuilder:
                         elif kanji[2] == '東旭川町米原':
 
                             katakana.append('ヒガシアサヒカワチョウヨネハラ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '東旭川南１条':
+
+                            katakana.append('ヒガシアサヒカワミナミ1ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '東旭川南２条':
+
+                            katakana.append('ヒガシアサヒカワミナミ2ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '東鷹栖１０線':
+
+                            katakana.append('ヒガシタカス10セン')
+                            results.append(katakana)
+
+                        elif kanji[2] == '東鷹栖１１線':
+
+                            katakana.append('ヒガシタカス11セン')
+                            results.append(katakana)
+
+                        elif kanji[2] == '東鷹栖１２線':
+
+                            katakana.append('ヒガシタカス12セン')
+                            results.append(katakana)
+
+                        elif kanji[2] == '東鷹栖１３線':
+
+                            katakana.append('ヒガシタカス13セン')
+                            results.append(katakana)
+
+                        elif kanji[2] == '東鷹栖１４線':
+
+                            katakana.append('ヒガシタカス14セン')
+                            results.append(katakana)
+
+                        elif kanji[2] == '東鷹栖１５線':
+
+                            katakana.append('ヒガシタカス15セン')
+                            results.append(katakana)
+
+                        elif kanji[2] == '東鷹栖１条':
+
+                            katakana.append('ヒガシタカス1ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '東鷹栖１線':
+
+                            katakana.append('ヒガシタカス1セン')
+                            results.append(katakana)
+
+                        elif kanji[2] == '東鷹栖２条':
+
+                            katakana.append('ヒガシタカス2ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '東鷹栖２線':
+
+                            katakana.append('ヒガシタカス2セン')
+                            results.append(katakana)
+
+                        elif kanji[2] == '東鷹栖３条':
+
+                            katakana.append('ヒガシタカス3ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '東鷹栖３線':
+
+                            katakana.append('ヒガシタカス3セン')
+                            results.append(katakana)
+
+                        elif kanji[2] == '東鷹栖４条':
+
+                            katakana.append('ヒガシタカス4ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '東鷹栖４線':
+
+                            katakana.append('ヒガシタカス4セン')
+                            results.append(katakana)
+
+                        elif kanji[2] == '東鷹栖５線':
+
+                            katakana.append('ヒガシタカス5セン')
+                            results.append(katakana)
+
+                        elif kanji[2] == '東鷹栖６線':
+
+                            katakana.append('ヒガシタカス6セン')
+                            results.append(katakana)
+
+                        elif kanji[2] == '東鷹栖７線':
+
+                            katakana.append('ヒガシタカス7セン')
+                            results.append(katakana)
+
+                        elif kanji[2] == '東鷹栖８線':
+
+                            katakana.append('ヒガシタカス8セン')
+                            results.append(katakana)
+
+                        elif kanji[2] == '東鷹栖９線':
+
+                            katakana.append('ヒガシタカス9セン')
+                            results.append(katakana)
+
+                        elif kanji[2] == '東鷹栖東１条':
+
+                            katakana.append('ヒガシタカスヒガシ1ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '東鷹栖東１線':
+
+                            katakana.append('ヒガシタカスヒガシ1セン')
+                            results.append(katakana)
+
+                        elif kanji[2] == '東鷹栖東２条':
+
+                            katakana.append('ヒガシタカスヒガシ2ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '東鷹栖東３条':
+
+                            katakana.append('ヒガシタカスヒガシ3ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '東山':
+
+                            katakana.append('ヒガシヤマ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '北門町':
+
+                            katakana.append('ホクモンチョウ')
                             results.append(katakana)
 
         if len(results) > 0:
