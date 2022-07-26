@@ -1760,6 +1760,111 @@ class JPPostCodeBuilder:
 
                 return results
 
+            elif last_four_digits == '8301':
+
+                address.append('緑が丘１条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8302':
+
+                address.append('緑が丘２条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8303':
+
+                address.append('緑が丘３条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8304':
+
+                address.append('緑が丘４条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8305':
+
+                address.append('緑が丘５条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8801':
+
+                address.append('緑が丘東１条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8802':
+
+                address.append('緑が丘東２条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8803':
+
+                address.append('緑が丘東３条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8804':
+
+                address.append('緑が丘東４条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8805':
+
+                address.append('緑が丘東５条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8811':
+
+                address.append('緑が丘南１条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8812':
+
+                address.append('緑が丘南２条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8813':
+
+                address.append('緑が丘南３条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8814':
+
+                address.append('緑が丘南４条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8815':
+
+                address.append('緑が丘南５条')
+                results.append(address)
+
+                return results
+
         elif first_three_digits == '070':
 
             address.append('北海道')
@@ -5050,6 +5155,81 @@ class JPPostCodeBuilder:
                         elif kanji[2] == '北門町':
 
                             katakana.append('ホクモンチョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '緑が丘１条':
+
+                            katakana.append('ミドリガオカ1ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '緑が丘２条':
+
+                            katakana.append('ミドリガオカ2ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '緑が丘３条':
+
+                            katakana.append('ミドリガオカ3ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '緑が丘４条':
+
+                            katakana.append('ミドリガオカ4ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '緑が丘５条':
+
+                            katakana.append('ミドリガオカ5ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '緑が丘東１条':
+
+                            katakana.append('ミドリガオカヒガシ1ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '緑が丘東２条':
+
+                            katakana.append('ミドリガオカヒガシ2ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '緑が丘東３条':
+
+                            katakana.append('ミドリガオカヒガシ3ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '緑が丘東４条':
+
+                            katakana.append('ミドリガオカヒガシ4ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '緑が丘東５条':
+
+                            katakana.append('ミドリガオカヒガシ5ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '緑が丘南１条':
+
+                            katakana.append('ミドリガオカミナミ1ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '緑が丘南２条':
+
+                            katakana.append('ミドリガオカミナミ2ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '緑が丘南３条':
+
+                            katakana.append('ミドリガオカミナミ3ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '緑が丘南４条':
+
+                            katakana.append('ミドリガオカミナミ4ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '緑が丘南５条':
+
+                            katakana.append('ミドリガオカミナミ5ジョウ')
                             results.append(katakana)
 
         if len(results) > 0:
