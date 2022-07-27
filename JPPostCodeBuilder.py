@@ -1865,6 +1865,69 @@ class JPPostCodeBuilder:
 
                 return results
 
+            elif last_four_digits == '8331':
+
+                address.append('南１条通')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8332':
+
+                address.append('南２条通')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8333':
+
+                address.append('南３条通')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8334':
+
+                address.append('南４条通')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8335':
+
+                address.append('南５条通')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8336':
+
+                address.append('南６条通')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8337':
+
+                address.append('南７条通')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8338':
+
+                address.append('南８条通')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8339':
+
+                address.append('南９条通')
+                results.append(address)
+
+                return results
+
         elif first_three_digits == '070':
 
             address.append('北海道')
@@ -2731,6 +2794,13 @@ class JPPostCodeBuilder:
 
                 return results
 
+            elif last_four_digits == '0823':
+
+                address.append('緑町')
+                results.append(address)
+
+                return results
+
         elif first_three_digits == '071':
 
             address.append('北海道')
@@ -3110,6 +3180,13 @@ class JPPostCodeBuilder:
             elif last_four_digits == '8171':
 
                 address.append('東山')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8166':
+
+                address.append('緑台')
                 results.append(address)
 
                 return results
@@ -5230,6 +5307,61 @@ class JPPostCodeBuilder:
                         elif kanji[2] == '緑が丘南５条':
 
                             katakana.append('ミドリガオカミナミ5ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '緑台':
+
+                            katakana.append('ミドリダイ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '緑町':
+
+                            katakana.append('ミドリマチ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '南１条通':
+
+                            katakana.append('ミナミ1ジョウドオリ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '南２条通':
+
+                            katakana.append('ミナミ2ジョウドオリ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '南３条通':
+
+                            katakana.append('ミナミ3ジョウドオリ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '南４条通':
+
+                            katakana.append('ミナミ4ジョウドオリ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '南５条通':
+
+                            katakana.append('ミナミ5ジョウドオリ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '南６条通':
+
+                            katakana.append('ミナミ6ジョウドオリ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '南７条通':
+
+                            katakana.append('ミナミ7ジョウドオリ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '南８条通':
+
+                            katakana.append('ミナミ8ジョウドオリ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '南９条通':
+
+                            katakana.append('ミナミ9ジョウドオリ')
                             results.append(katakana)
 
         if len(results) > 0:
