@@ -1928,6 +1928,27 @@ class JPPostCodeBuilder:
 
                 return results
 
+            elif last_four_digits == '8330':
+
+                address.append('宮下通')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8391':
+
+                address.append('宮前１条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8392':
+
+                address.append('宮前２条')
+                results.append(address)
+
+                return results
+
         elif first_three_digits == '070':
 
             address.append('北海道')
@@ -2797,6 +2818,27 @@ class JPPostCodeBuilder:
             elif last_four_digits == '0823':
 
                 address.append('緑町')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8028':
+
+                address.append('南が丘')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '0030':
+
+                address.append('宮下通')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '0810':
+
+                address.append('本町')
                 results.append(address)
 
                 return results
@@ -5362,6 +5404,31 @@ class JPPostCodeBuilder:
                         elif kanji[2] == '南９条通':
 
                             katakana.append('ミナミ9ジョウドオリ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '南が丘':
+
+                            katakana.append('ミナミガオカ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '宮下通':
+
+                            katakana.append('ミヤシタドオリ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '宮前１条':
+
+                            katakana.append('ミヤマエ1ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '宮前２条':
+
+                            katakana.append('ミヤマエ2ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '本町':
+
+                            katakana.append('モトマチ')
                             results.append(katakana)
 
         if len(results) > 0:
