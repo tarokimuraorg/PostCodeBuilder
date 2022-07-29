@@ -264,6 +264,42 @@ class JPPostCodeBuilder:
 
                 return results
 
+            elif last_four_digits == '8441':
+
+                address[1] = '旭川市'
+
+                address.append('流通団地１条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8442':
+
+                address[1] = '旭川市'
+
+                address.append('流通団地２条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8443':
+
+                address[1] = '旭川市'
+
+                address.append('流通団地３条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '8444':
+
+                address[1] = '旭川市'
+
+                address.append('流通団地４条')
+                results.append(address)
+
+                return results
+
             elif last_four_digits == '1143':
 
                 address.append('赤平')
@@ -5429,6 +5465,26 @@ class JPPostCodeBuilder:
                         elif kanji[2] == '本町':
 
                             katakana.append('モトマチ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '流通団地１条':
+
+                            katakana.append('リュウツウダンチ1ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '流通団地２条':
+
+                            katakana.append('リュウツウダンチ2ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '流通団地３条':
+
+                            katakana.append('リュウツウダンチ3ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '流通団地４条':
+
+                            katakana.append('リュウツウダンチ4ジョウ')
                             results.append(katakana)
 
         if len(results) > 0:
