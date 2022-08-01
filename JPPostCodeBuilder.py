@@ -59,6 +59,16 @@ class JPPostCodeBuilder:
                 results.append(address)
                 return results
 
+        elif first_three_digits == '075':
+
+            address.append('北海道')
+            address.append('芦別市')
+
+            if last_four_digits == '0000':
+
+                results.append(address)
+                return results
+
         address = []
 
         if first_three_digits == '079':
@@ -3287,6 +3297,44 @@ class JPPostCodeBuilder:
                 results.append(address)
 
                 return results
+
+        elif first_three_digits == '075':
+
+            address.append('北海道')
+            address.append('芦別市')
+
+            if last_four_digits == '0165':
+
+                address.append('青木沢')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '0036':
+
+                address.append('旭町')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '0035':
+
+                address.append('旭町油谷')
+                results.append(address)
+
+                return results
+
+        elif first_three_digits == '076':
+
+            address.append('北海道')
+            address.append('芦別市')
+
+            if last_four_digits == '0081':
+
+                address.append('泉')
+                results.append(address)
+
+                return results
             
         raise ValueError(self._emcreator.message('JPPostCodeBuilder.py','convertToAddress','post code error','the post code is an incompatible value.'))
         
@@ -3318,6 +3366,11 @@ class JPPostCodeBuilder:
                     elif kanji[1] == '旭川市':
 
                         katakana.append('アサヒカワシ')
+                        results.append(katakana)
+
+                    elif kanji[1] == '芦別市':
+
+                        katakana.append('アシベツシ')
                         results.append(katakana)
 
             elif len(kanji) == 3:
@@ -5485,6 +5538,30 @@ class JPPostCodeBuilder:
                         elif kanji[2] == '流通団地４条':
 
                             katakana.append('リュウツウダンチ4ジョウ')
+                            results.append(katakana)
+
+                    elif kanji[1] == '芦別市':
+
+                        katakana.append('アシベツシ')
+
+                        if kanji[2] == '青木沢':
+
+                            katakana.append('アオキサワ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '旭町':
+
+                            katakana.append('アサヒチョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '旭町油谷':
+
+                            katakana.append('アサヒマチユヤ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '泉':
+
+                            katakana.append('イズミ')
                             results.append(katakana)
 
         if len(results) > 0:
