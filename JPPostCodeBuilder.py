@@ -319,6 +319,15 @@ class JPPostCodeBuilder:
 
                 return results
 
+            elif last_four_digits == '1372':
+
+                address[1] = '芦別市'
+
+                address.append('野花南町')
+                results.append(address)
+
+                return results
+
             elif last_four_digits == '1143':
 
                 address.append('赤平')
@@ -3438,6 +3447,125 @@ class JPPostCodeBuilder:
 
                 return results
 
+            elif last_four_digits == '0251':
+
+                address.append('新城町')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '0019':
+
+                address.append('高根町')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '0018':
+
+                address.append('常磐町')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '0254':
+
+                address.append('豊岡')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '0253':
+
+                address.append('豊岡町')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '0167':
+
+                address.append('中の丘町')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '0161':
+
+                address.append('西芦別町')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '0162':
+
+                address.append('東頼城町')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '0017':
+
+                address.append('福住町')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '0034':
+
+                address.append('幌内')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '0041':
+
+                address.append('本町')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '0021':
+
+                address.append('南一条西')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '0031':
+
+                address.append('南一条東')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '0032':
+
+                address.append('南二条東')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '0033':
+
+                address.append('南三条東')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '0164':
+
+                address.append('頼城町')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '0163':
+
+                address.append('緑泉町')
+                results.append(address)
+
+                return results
+
         elif first_three_digits == '076':
 
             address.append('北海道')
@@ -5756,6 +5884,96 @@ class JPPostCodeBuilder:
                         elif kanji[2] == '黄金町':
 
                             katakana.append('コガネチョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '新城町':
+
+                            katakana.append('シンジョウチョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '高根町':
+
+                            katakana.append('タカネチョウ')
+                            results.append(katakana)
+                            
+                        elif kanji[2] == '常磐町':
+
+                            katakana.append('トキワチョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '豊岡':
+
+                            katakana.append('トヨオカ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '豊岡町':
+
+                            katakana.append('トヨオカチョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '中の丘町':
+
+                            katakana.append('ナカノオカチョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '西芦別町':
+
+                            katakana.append('ニシアシベツチョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '野花南町':
+
+                            katakana.append('ノカナンチョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '東頼城町':
+
+                            katakana.append('ヒガシライジョウチョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '福住町':
+
+                            katakana.append('フクズミチョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '幌内':
+
+                            katakana.append('ホロナイ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '本町':
+
+                            katakana.append('ホンチョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '南一条西':
+
+                            katakana.append('ミナミ1ジョウニシ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '南一条東':
+
+                            katakana.append('ミナミ1ジョウヒガシ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '南二条東':
+
+                            katakana.append('ミナミ2ジョウヒガシ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '南三条東':
+
+                            katakana.append('ミナミ3ジョウヒガシ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '頼城町':
+
+                            katakana.append('ライジョウチョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '緑泉町':
+
+                            katakana.append('ロクセンチョウ')
                             results.append(katakana)
 
         if len(results) > 0:
