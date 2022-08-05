@@ -69,6 +69,16 @@ class JPPostCodeBuilder:
                 results.append(address)
                 return results
 
+        elif first_three_digits == '089':
+
+            address.append('北海道')
+            address.append('足寄郡足寄町')
+
+            if last_four_digits == '3700':
+
+                results.append(address)
+                return results
+
         address = []
 
         if first_three_digits == '079':
@@ -3577,6 +3587,46 @@ class JPPostCodeBuilder:
                 results.append(address)
 
                 return results
+
+        elif first_three_digits == '089':
+            
+            address.append('北海道')
+            address.append('足寄郡足寄町')
+
+            if last_four_digits == '3708':
+
+                address.append('愛冠')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '3721':
+
+                address.append('旭町')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '3724':
+
+                address.append('稲牛')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '4144' or last_four_digits == '4251':
+
+                address.append('大誉地')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '4252':
+
+                address.append('大誉地本町')
+                results.append(address)
+
+                return results
             
         raise ValueError(self._emcreator.message('JPPostCodeBuilder.py','convertToAddress','post code error','the post code is an incompatible value.'))
         
@@ -3613,6 +3663,11 @@ class JPPostCodeBuilder:
                     elif kanji[1] == '芦別市':
 
                         katakana.append('アシベツシ')
+                        results.append(katakana)
+
+                    elif kanji[1] == '足寄郡足寄町':
+
+                        katakana.append('アショログンアショロチョウ')
                         results.append(katakana)
 
             elif len(kanji) == 3:
@@ -5974,6 +6029,35 @@ class JPPostCodeBuilder:
                         elif kanji[2] == '緑泉町':
 
                             katakana.append('ロクセンチョウ')
+                            results.append(katakana)
+
+                    elif kanji[1] == '足寄郡足寄町':
+
+                        katakana.append('アショログンアショロチョウ')
+
+                        if kanji[2] == '愛冠':
+
+                            katakana.append('アイカップ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '旭町':
+
+                            katakana.append('アサヒマチ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '稲牛':
+
+                            katakana.append('イナウシ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '大誉地':
+
+                            katakana.append('オヨチ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '大誉地本町':
+
+                            katakana.append('オヨチモトマチ')
                             results.append(katakana)
 
         if len(results) > 0:
