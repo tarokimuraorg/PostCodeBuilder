@@ -3627,6 +3627,104 @@ class JPPostCodeBuilder:
                 results.append(address)
 
                 return results
+
+            elif last_four_digits == '3961':
+
+                address.append('上足寄')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '3962':
+
+                address.append('上足寄本町')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '4142':
+
+                address.append('上利別')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '4141':
+
+                address.append('上利別本町')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '3963':
+
+                address.append('上螺湾')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '3701':
+
+                address.append('北一条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '3702':
+
+                address.append('北二条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '3703':
+
+                address.append('北三条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '3704':
+
+                address.append('北四条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '3705':
+
+                address.append('北五条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '3706':
+
+                address.append('北六条')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '3874':
+
+                address.append('喜登牛')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '3726':
+
+                address.append('共栄町')
+                results.append(address)
+
+                return results
+
+            elif last_four_digits == '3727':
+
+                address.append('郊南')
+                results.append(address)
+
+                return results
             
         raise ValueError(self._emcreator.message('JPPostCodeBuilder.py','convertToAddress','post code error','the post code is an incompatible value.'))
         
@@ -6058,6 +6156,76 @@ class JPPostCodeBuilder:
                         elif kanji[2] == '大誉地本町':
 
                             katakana.append('オヨチモトマチ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '上足寄':
+
+                            katakana.append('カミアショロ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '上足寄本町':
+
+                            katakana.append('カミアショロモトマチ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '上利別':
+
+                            katakana.append('カミトシベツ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '上利別本町':
+
+                            katakana.append('カミトシベツモトマチ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '上螺湾':
+
+                            katakana.append('カミラワン')
+                            results.append(katakana)
+
+                        elif kanji[2] == '北一条':
+
+                            katakana.append('キタ1ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '北二条':
+
+                            katakana.append('キタ2ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '北三条':
+
+                            katakana.append('キタ3ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '北四条':
+
+                            katakana.append('キタ4ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '北五条':
+
+                            katakana.append('キタ5ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '北六条':
+
+                            katakana.append('キタ6ジョウ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '喜登牛':
+
+                            katakana.append('キトウシ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '共栄町':
+
+                            katakana.append('キョウエイマチ')
+                            results.append(katakana)
+
+                        elif kanji[2] == '郊南':
+
+                            katakana.append('コウナン')
                             results.append(katakana)
 
         if len(results) > 0:
