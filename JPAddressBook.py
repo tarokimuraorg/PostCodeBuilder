@@ -1,3 +1,4 @@
+import re
 import pandas
 from ErrorMessageCreator import ErrorMessageCreator
 from JPAddressPage import JPAddressPage
@@ -38,12 +39,14 @@ class JPAddressBook:
                 furigana = furigana + str(row[2]) + ' '
                 furigana = furigana + str(row[3])
                 furigana = furigana.replace('ｲｶﾆｹｲｻｲｶﾞﾅｲﾊﾞｱｲ','')
+                furigana = re.sub('\(\d+-\d+ﾁｮｳﾒ\)','',furigana)
                 furigana = furigana.strip()
 
                 address = str(row[4]) + ' '
                 address = address + str(row[5]) + ' '
                 address = address + str(row[6])
                 address = address.replace('以下に掲載がない場合','')
+                address = re.sub('（\d+～\d+丁目）','',address)
                 address = address.strip()
 
                 address_page = JPAddressPage(post_code, address, furigana)
