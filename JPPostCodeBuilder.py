@@ -8,7 +8,6 @@ class JPPostCodeBuilder:
 
     def __init__(self, post_code : str):
 
-        self._address_book = JPAddressBook.createAddressBook()
         self._post_code = ''
 
         in_code = post_code.strip()
@@ -21,8 +20,9 @@ class JPPostCodeBuilder:
     def address_finder(self):
 
         if self._post_code:
-         
-            address_pages = list(filter(lambda page: page.post_code == self._post_code, self._address_book))
+
+            address_book = JPAddressBook.createAddressBook()
+            address_pages = list(filter(lambda page: page.post_code == self._post_code, address_book))
 
             if (self._post_code[0:3] == '079'):
 
