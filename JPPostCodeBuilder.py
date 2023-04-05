@@ -29,7 +29,7 @@ class JPPostCodeBuilder:
                 if len(address_pages) > 0:
                     return address_pages
                 
-                return JPAddressPage(self._post_code, '北海道 赤平市', 'ﾎｯｶｲﾄﾞｳ ｱｶﾋﾞﾗｼ')
+                return [JPAddressPage(self._post_code, '北海道 赤平市', 'ﾎｯｶｲﾄﾞｳ ｱｶﾋﾞﾗｼ')]
 
             return address_pages
     
