@@ -1,29 +1,21 @@
 import re
 import pandas
-import ErrorMessageBuilder
 from JPAddressPage import JPAddressPage
+import ErrorMessageBuilder
 
-class JPAddressBook:
-    
-    def __init__(self):
+def createAddressBook():
 
-        self._csv_list = []
+    address_book = []
 
-        try:
-            data_frame = pandas.read_csv('./csv/ken_all.csv', usecols=[2,3,4,5,6,7,8], names=['post_code','furigana1','furigana2','furigana3','address1','address2','address3'])
-            csv_data = data_frame.drop_duplicates()
-            self._csv_list = csv_data.values.tolist()
+    try:
 
-        except Exception as e:
-            print(ErrorMessageBuilder.message('JPAddressBook', 'readCSVData', 'failed to read csv data', f'{e}'))
+        data_frame = pandas.read_csv('./csv/ken_all.csv', usecols=[2,3,4,5,6,7,8], names=['post_code','furigana1','furigana2','furigana3','address1','address2','address3'])
+        csv_data = data_frame.drop_duplicates()
+        csv_list = csv_data.values.tolist()
 
-    def createAddressBook(self):
-        
-        address_book = []
+        if len(csv_list) > 0:
 
-        if len(self._csv_list) > 0:
-
-            for row in self._csv_list:
+            for row in csv_list:
 
                 post_code = '0'
                 post_code = post_code + str(row[0])
@@ -46,4 +38,7 @@ class JPAddressBook:
                 address_page = JPAddressPage(post_code, address, furigana)
                 address_book.append(address_page)
 
-        return address_book
+    except Exception as e:
+        print(ErrorMessageBuilder.message('JPAddressBook', 'init', 'failed to read csv data', f'{e}'))
+    
+    return address_book
