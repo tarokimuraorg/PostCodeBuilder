@@ -1,5 +1,5 @@
 import re
-from JPAddressBook import JPAddressBook
+import JPAddressBook
 from JPAddressPage import JPAddressPage
 from StringConvertor import StringConvertor
 import ErrorMessageBuilder
@@ -8,6 +8,7 @@ class JPPostCodeBuilder:
 
     def __init__(self, post_code : str):
 
+        self._address_book = JPAddressBook.createAddressBook()
         self._post_code = ''
 
         in_code = post_code.strip()
@@ -15,14 +16,13 @@ class JPPostCodeBuilder:
         out_code = out_code.replace('-', '')
         
         if re.match('^\d{7}$', out_code):
-            self._post_code = out_code
+             self._post_code = out_code
 
     def address_finder(self):
 
         if self._post_code:
-
-            address_book = JPAddressBook().createAddressBook()
-            address_pages = list(filter(lambda page: page.post_code == self._post_code, address_book))
+         
+            address_pages = list(filter(lambda page: page.post_code == self._post_code, self._address_book))
 
             if (self._post_code[0:3] == '079'):
 
