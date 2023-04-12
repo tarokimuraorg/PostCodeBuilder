@@ -28,6 +28,7 @@ class JPPostCodeBuilder:
 
                 address_book = list(map(self.__write_on_address_page, address_data))
 
+                # 北海道 赤平市
                 if (self._post_code[0:3] == '079'):
 
                     if len(address_book) > 0:
@@ -35,12 +36,21 @@ class JPPostCodeBuilder:
                     
                     return [JPAddressPage(self._post_code, '北海道 赤平市', 'ﾎｯｶｲﾄﾞｳ ｱｶﾋﾞﾗｼ')]
 
+                # 北海道 阿寒郡鶴居村
                 elif (self._post_code[0:3] == '085'):
                     
                     if len(address_book) > 0:
                         return address_book
                     
                     return [JPAddressPage(self._post_code, '北海道 阿寒郡鶴居村', 'ﾎｯｶｲﾄﾞｳ ｱｶﾝｸﾞﾝﾂﾙｲﾑﾗ')]
+                
+                # 北海道 旭川市
+                elif self._post_code[0:3] == '070':
+
+                    if len(address_book) > 0:
+                        return address_book
+                    
+                    return [JPAddressPage(self._post_code, '北海道 旭川市', 'ﾎｯｶｲﾄﾞｳ ｱｻﾋｶﾜｼ')]
 
                 return address_book
     
