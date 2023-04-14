@@ -51,6 +51,13 @@ class JPPostCodeBuilder:
                         return address_book
                     
                     return [JPAddressPage(self._post_code, '北海道 旭川市', 'ﾎｯｶｲﾄﾞｳ ｱｻﾋｶﾜｼ')]
+                
+                elif self._post_code[0:3] == '075':
+
+                    if len(address_book) > 0:
+                        return address_book
+                    
+                    return [JPAddressPage(self._post_code, '北海道 芦別市', 'ﾎｯｶｲﾄﾞｳ ｱｼﾍﾞﾂｼ')]
 
                 return address_book
     
@@ -68,13 +75,18 @@ class JPPostCodeBuilder:
         furigana = furigana + str(row[3])
         furigana = furigana.replace('ｲｶﾆｹｲｻｲｶﾞﾅｲﾊﾞｱｲ','')
         furigana = re.sub('\(\d+-\d+ﾁｮｳﾒ\)','',furigana)
+        furigana = re.sub('\(\d+-\d+ﾊﾞﾝﾁ\)','',furigana)
+        furigana = furigana.replace('(ｿﾉﾀ)', '')
         furigana = furigana.strip()
 
         address = str(row[4]) + ' '
         address = address + str(row[5]) + ' '
         address = address + str(row[6])
         address = address.replace('以下に掲載がない場合','')
+        address = re.sub('（\d+～\d+番地）','',address)
         address = re.sub('（\d+～\d+丁目）','',address)
+        address = address.replace('（その他）', '')
+        
         address = address.strip()
 
         return JPAddressPage(post_code, address, furigana)
