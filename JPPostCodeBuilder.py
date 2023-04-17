@@ -52,12 +52,21 @@ class JPPostCodeBuilder:
                     
                     return [JPAddressPage(self._post_code, '北海道 旭川市', 'ﾎｯｶｲﾄﾞｳ ｱｻﾋｶﾜｼ')]
                 
+                # 北海道 芦別市
                 elif self._post_code[0:3] == '075':
 
                     if len(address_book) > 0:
                         return address_book
                     
                     return [JPAddressPage(self._post_code, '北海道 芦別市', 'ﾎｯｶｲﾄﾞｳ ｱｼﾍﾞﾂｼ')]
+                
+                # 北海道 足寄郡足寄町
+                elif self._post_code[0:3] == '089':
+                    
+                    if len(address_book) > 0:
+                        return address_book
+                    
+                    return [JPAddressPage(self._post_code, '北海道 足寄郡足寄町', 'ﾎｯｶｲﾄﾞｳ ｱｼｮﾛｸﾞﾝｱｼｮﾛﾁｮｳ')]
 
                 return address_book
     
@@ -85,6 +94,7 @@ class JPPostCodeBuilder:
         address = address.replace('以下に掲載がない場合','')
         address = re.sub('（\d+～\d+番地）','',address)
         address = re.sub('（\d+～\d+丁目）','',address)
+        address = re.sub('（\d+－\d+番地）', '', address)
         address = address.replace('（その他）', '')
         
         address = address.strip()
