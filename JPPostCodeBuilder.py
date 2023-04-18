@@ -28,8 +28,10 @@ class JPPostCodeBuilder:
 
                 address_book = list(map(self.__write_on_address_page, address_data))
 
+                # 郵便番号の上5桁で判断======================================================
+
                 # 北海道 赤平市
-                if (self._post_code[0:3] == '079'):
+                if (self._post_code[0:5] == '07911'):
 
                     if len(address_book) > 0:
                         return address_book
@@ -37,15 +39,33 @@ class JPPostCodeBuilder:
                     return [JPAddressPage(self._post_code, '北海道 赤平市', 'ﾎｯｶｲﾄﾞｳ ｱｶﾋﾞﾗｼ')]
 
                 # 北海道 阿寒郡鶴居村
-                elif (self._post_code[0:3] == '085'):
+                elif (self._post_code[0:5] == '08512'):
                     
                     if len(address_book) > 0:
                         return address_book
                     
                     return [JPAddressPage(self._post_code, '北海道 阿寒郡鶴居村', 'ﾎｯｶｲﾄﾞｳ ｱｶﾝｸﾞﾝﾂﾙｲﾑﾗ')]
                 
+                # 北海道 足寄郡足寄町
+                elif self._post_code[0:5] == '08937':
+                    
+                    if len(address_book) > 0:
+                        return address_book
+                    
+                    return [JPAddressPage(self._post_code, '北海道 足寄郡足寄町', 'ﾎｯｶｲﾄﾞｳ ｱｼｮﾛｸﾞﾝｱｼｮﾛﾁｮｳ')]
+                
+                # 北海道 足寄郡陸別町
+                elif self._post_code[0:5] == '08943':
+                    
+                    if len(address_book) > 0:
+                        return address_book
+                    
+                    return [JPAddressPage(self._post_code, '北海道 足寄郡陸別町', 'ﾎｯｶｲﾄﾞｳ ｱｼｮﾛｸﾞﾝﾘｸﾍﾞﾂﾁｮｳ')]
+
+                # 郵便番号の上3桁で判断======================================================
+
                 # 北海道 旭川市
-                elif self._post_code[0:3] == '070':
+                if self._post_code[0:3] == '070':
 
                     if len(address_book) > 0:
                         return address_book
@@ -60,13 +80,7 @@ class JPPostCodeBuilder:
                     
                     return [JPAddressPage(self._post_code, '北海道 芦別市', 'ﾎｯｶｲﾄﾞｳ ｱｼﾍﾞﾂｼ')]
                 
-                # 北海道 足寄郡足寄町
-                elif self._post_code[0:3] == '089':
-                    
-                    if len(address_book) > 0:
-                        return address_book
-                    
-                    return [JPAddressPage(self._post_code, '北海道 足寄郡足寄町', 'ﾎｯｶｲﾄﾞｳ ｱｼｮﾛｸﾞﾝｱｼｮﾛﾁｮｳ')]
+                #==========================================================================
 
                 return address_book
     
