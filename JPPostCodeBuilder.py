@@ -28,7 +28,9 @@ class JPPostCodeBuilder:
 
                 address_book = list(map(self.__write_on_address_page, address_data))
 
-                # 郵便番号の上5桁で判断======================================================
+                # ===================
+                # 郵便番号の上5桁で判断 
+                # ===================
 
                 # 北海道 赤平市
                 if (self._post_code[0:5] == '07911'):
@@ -61,8 +63,18 @@ class JPPostCodeBuilder:
                         return address_book
                     
                     return [JPAddressPage(self._post_code, '北海道 足寄郡陸別町', 'ﾎｯｶｲﾄﾞｳ ｱｼｮﾛｸﾞﾝﾘｸﾍﾞﾂﾁｮｳ')]
+                
+                # 北海道 厚岸郡厚岸町
+                elif self._post_code[0:5] == '08811':
+                    
+                    if len(address_book) > 0:
+                        return address_book
+                    
+                    return [JPAddressPage(self._post_code, '北海道 厚岸郡厚岸町', 'ﾎｯｶｲﾄﾞｳ ｱｯｹｼｸﾞﾝｱｯｹｼﾁｮｳ')]
 
-                # 郵便番号の上3桁で判断======================================================
+                # ===================
+                # 郵便番号の上3桁で判断
+                # ===================
 
                 # 北海道 旭川市
                 if self._post_code[0:3] == '070':
@@ -79,8 +91,6 @@ class JPPostCodeBuilder:
                         return address_book
                     
                     return [JPAddressPage(self._post_code, '北海道 芦別市', 'ﾎｯｶｲﾄﾞｳ ｱｼﾍﾞﾂｼ')]
-                
-                #==========================================================================
 
                 return address_book
     
@@ -99,6 +109,7 @@ class JPPostCodeBuilder:
         furigana = furigana.replace('ｲｶﾆｹｲｻｲｶﾞﾅｲﾊﾞｱｲ','')
         furigana = re.sub('\(\d+-\d+ﾁｮｳﾒ\)','',furigana)
         furigana = re.sub('\(\d+-\d+ﾊﾞﾝﾁ\)','',furigana)
+        furigana = re.sub('\(\d+ﾁｮｳﾒ\d+-\d+ﾊﾞﾝﾁ\)', '', furigana)
         furigana = furigana.replace('(ｿﾉﾀ)', '')
         furigana = furigana.strip()
 
@@ -109,6 +120,7 @@ class JPPostCodeBuilder:
         address = re.sub('（\d+～\d+番地）','',address)
         address = re.sub('（\d+～\d+丁目）','',address)
         address = re.sub('（\d+－\d+番地）', '', address)
+        address = re.sub('（\d+丁目\d+～\d+番地）', '', address)
         address = address.replace('（その他）', '')
         
         address = address.strip()
