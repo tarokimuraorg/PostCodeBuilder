@@ -71,6 +71,14 @@ class JPPostCodeBuilder:
                         return address_book
                     
                     return [JPAddressPage(self._post_code, '北海道 厚岸郡厚岸町', 'ﾎｯｶｲﾄﾞｳ ｱｯｹｼｸﾞﾝｱｯｹｼﾁｮｳ')]
+                
+                # 北海道 厚岸郡浜中町
+                elif self._post_code[0:5] == '08815':
+
+                    if len(address_book) > 0:
+                        return address_book
+                    
+                    return [JPAddressPage(self._post_code, '北海道 厚岸郡浜中町', 'ﾎｯｶｲﾄﾞｳ ｱｯｹｼｸﾞﾝﾊﾏﾅｶﾁｮｳ')]
 
                 # ===================
                 # 郵便番号の上3桁で判断
@@ -111,6 +119,7 @@ class JPPostCodeBuilder:
         furigana = re.sub('\(\d+-\d+ﾊﾞﾝﾁ\)','',furigana)
         furigana = re.sub('\(\d+ﾁｮｳﾒ\d+-\d+ﾊﾞﾝﾁ\)', '', furigana)
         furigana = furigana.replace('(ｿﾉﾀ)', '')
+        furigana = furigana.replace('(ﾁｮｳﾒ)', '')
         furigana = furigana.strip()
 
         address = str(row[4]) + ' '
@@ -122,6 +131,7 @@ class JPPostCodeBuilder:
         address = re.sub('（\d+－\d+番地）', '', address)
         address = re.sub('（\d+丁目\d+～\d+番地）', '', address)
         address = address.replace('（その他）', '')
+        address = address.replace('（丁目）', '')
         
         address = address.strip()
 
