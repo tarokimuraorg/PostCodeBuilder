@@ -79,6 +79,14 @@ class JPPostCodeBuilder:
                         return address_book
                     
                     return [JPAddressPage(self._post_code, '北海道 厚岸郡浜中町', 'ﾎｯｶｲﾄﾞｳ ｱｯｹｼｸﾞﾝﾊﾏﾅｶﾁｮｳ')]
+                
+                # 北海道 網走郡大空町
+                elif self._post_code[0:5] == '09923':
+
+                    if len(address_book) > 0:
+                        return address_book
+                    
+                    return [JPAddressPage(self._post_code, '北海道 網走郡大空町', 'ﾎｯｶｲﾄﾞｳ ｱﾊﾞｼﾘｸﾞﾝｵｵｿﾞﾗﾁｮｳ')]
 
                 # ===================
                 # 郵便番号の上3桁で判断
