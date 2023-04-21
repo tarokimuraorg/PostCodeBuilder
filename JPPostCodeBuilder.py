@@ -28,6 +28,9 @@ class JPPostCodeBuilder:
 
                 address_book = list(map(self.__write_on_address_page, address_data))
 
+                if len(address_book) > 0:
+                    return address_book
+
                 # ===================
                 # 郵便番号の上5桁で判断 
                 # ===================
@@ -35,56 +38,56 @@ class JPPostCodeBuilder:
                 # 北海道 赤平市
                 if (self._post_code[0:5] == '07911'):
 
-                    if len(address_book) > 0:
-                        return address_book
+                    # if len(address_book) > 0:
+                    #     return address_book
                     
                     return [JPAddressPage(self._post_code, '北海道 赤平市', 'ﾎｯｶｲﾄﾞｳ ｱｶﾋﾞﾗｼ')]
 
                 # 北海道 阿寒郡鶴居村
                 elif (self._post_code[0:5] == '08512'):
                     
-                    if len(address_book) > 0:
-                        return address_book
+                    # if len(address_book) > 0:
+                    #     return address_book
                     
                     return [JPAddressPage(self._post_code, '北海道 阿寒郡鶴居村', 'ﾎｯｶｲﾄﾞｳ ｱｶﾝｸﾞﾝﾂﾙｲﾑﾗ')]
                 
                 # 北海道 足寄郡足寄町
                 elif self._post_code[0:5] == '08937':
                     
-                    if len(address_book) > 0:
-                        return address_book
+                    # if len(address_book) > 0:
+                    #     return address_book
                     
                     return [JPAddressPage(self._post_code, '北海道 足寄郡足寄町', 'ﾎｯｶｲﾄﾞｳ ｱｼｮﾛｸﾞﾝｱｼｮﾛﾁｮｳ')]
                 
                 # 北海道 足寄郡陸別町
                 elif self._post_code[0:5] == '08943':
                     
-                    if len(address_book) > 0:
-                        return address_book
+                    # if len(address_book) > 0:
+                    #     return address_book
                     
                     return [JPAddressPage(self._post_code, '北海道 足寄郡陸別町', 'ﾎｯｶｲﾄﾞｳ ｱｼｮﾛｸﾞﾝﾘｸﾍﾞﾂﾁｮｳ')]
                 
                 # 北海道 厚岸郡厚岸町
                 elif self._post_code[0:5] == '08811':
                     
-                    if len(address_book) > 0:
-                        return address_book
+                    # if len(address_book) > 0:
+                    #     return address_book
                     
                     return [JPAddressPage(self._post_code, '北海道 厚岸郡厚岸町', 'ﾎｯｶｲﾄﾞｳ ｱｯｹｼｸﾞﾝｱｯｹｼﾁｮｳ')]
                 
                 # 北海道 厚岸郡浜中町
                 elif self._post_code[0:5] == '08815':
 
-                    if len(address_book) > 0:
-                        return address_book
+                    # if len(address_book) > 0:
+                    #     return address_book
                     
                     return [JPAddressPage(self._post_code, '北海道 厚岸郡浜中町', 'ﾎｯｶｲﾄﾞｳ ｱｯｹｼｸﾞﾝﾊﾏﾅｶﾁｮｳ')]
                 
                 # 北海道 網走郡大空町
                 elif self._post_code[0:5] == '09923':
 
-                    if len(address_book) > 0:
-                        return address_book
+                    # if len(address_book) > 0:
+                    #     return address_book
                     
                     return [JPAddressPage(self._post_code, '北海道 網走郡大空町', 'ﾎｯｶｲﾄﾞｳ ｱﾊﾞｼﾘｸﾞﾝｵｵｿﾞﾗﾁｮｳ')]
 
@@ -95,20 +98,20 @@ class JPPostCodeBuilder:
                 # 北海道 旭川市
                 if self._post_code[0:3] == '070':
 
-                    if len(address_book) > 0:
-                        return address_book
+                    # if len(address_book) > 0:
+                    #     return address_book
                     
                     return [JPAddressPage(self._post_code, '北海道 旭川市', 'ﾎｯｶｲﾄﾞｳ ｱｻﾋｶﾜｼ')]
                 
                 # 北海道 芦別市
                 elif self._post_code[0:3] == '075':
 
-                    if len(address_book) > 0:
-                        return address_book
+                    # if len(address_book) > 0:
+                    #     return address_book
                     
                     return [JPAddressPage(self._post_code, '北海道 芦別市', 'ﾎｯｶｲﾄﾞｳ ｱｼﾍﾞﾂｼ')]
 
-                return address_book
+                #return address_book
     
         print(ErrorMessageBuilder.message('JPPostCodeBuilder','address_finder','invalid argument','the post code is a 7-digit number.'))
         return []
