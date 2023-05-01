@@ -34,70 +34,68 @@ class JPPostCodeBuilder:
                 print(ErrorMessageBuilder.message('JPPostCodeBuilder','address_finder','invalid data',f'the data including the post code({self._post_code}) is incompatible with the write_on_address_page function.'))
                 return []
                 
-            else:
+            # 北海道 赤平市
+            if (self._post_code[0:5] == '07911'):
+                return [JPAddressPage(self._post_code, '北海道 赤平市', 'ﾎｯｶｲﾄﾞｳ ｱｶﾋﾞﾗｼ')]
 
-                # 北海道 赤平市
-                if (self._post_code[0:5] == '07911'):
-                    return [JPAddressPage(self._post_code, '北海道 赤平市', 'ﾎｯｶｲﾄﾞｳ ｱｶﾋﾞﾗｼ')]
+            # 北海道 阿寒郡鶴居村
+            elif (self._post_code[0:5] == '08512'):
+                return [JPAddressPage(self._post_code, '北海道 阿寒郡鶴居村', 'ﾎｯｶｲﾄﾞｳ ｱｶﾝｸﾞﾝﾂﾙｲﾑﾗ')]
+            
+            # 北海道 足寄郡足寄町
+            elif self._post_code[0:5] == '08937':
+                return [JPAddressPage(self._post_code, '北海道 足寄郡足寄町', 'ﾎｯｶｲﾄﾞｳ ｱｼｮﾛｸﾞﾝｱｼｮﾛﾁｮｳ')]
+            
+            # 北海道 足寄郡陸別町
+            elif self._post_code[0:5] == '08943':
+                return [JPAddressPage(self._post_code, '北海道 足寄郡陸別町', 'ﾎｯｶｲﾄﾞｳ ｱｼｮﾛｸﾞﾝﾘｸﾍﾞﾂﾁｮｳ')]
+            
+            # 北海道 厚岸郡厚岸町
+            elif self._post_code[0:5] == '08811':
+                return [JPAddressPage(self._post_code, '北海道 厚岸郡厚岸町', 'ﾎｯｶｲﾄﾞｳ ｱｯｹｼｸﾞﾝｱｯｹｼﾁｮｳ')]
+            
+            # 北海道 厚岸郡浜中町
+            elif self._post_code[0:5] == '08815':
+                return [JPAddressPage(self._post_code, '北海道 厚岸郡浜中町', 'ﾎｯｶｲﾄﾞｳ ｱｯｹｼｸﾞﾝﾊﾏﾅｶﾁｮｳ')]
+            
+            # 北海道 網走郡大空町
+            elif self._post_code[0:5] == '09923':
+                return [JPAddressPage(self._post_code, '北海道 網走郡大空町', 'ﾎｯｶｲﾄﾞｳ ｱﾊﾞｼﾘｸﾞﾝｵｵｿﾞﾗﾁｮｳ')]
+            
+            # 北海道 網走郡津別町
+            elif self._post_code[0:5] == '09202':
+                return [JPAddressPage(self._post_code, '北海道 網走郡津別町', 'ﾎｯｶｲﾄﾞｳ ｱﾊﾞｼﾘｸﾞﾝﾂﾍﾞﾂﾁｮｳ')]
+            
+            # 北海道 虻田郡喜茂別町
+            elif self._post_code[0:5] == '04402':
+                return [JPAddressPage(self._post_code, '北海道 虻田郡喜茂別町', 'ﾎｯｶｲﾄﾞｳ ｱﾌﾞﾀｸﾞﾝｷﾓﾍﾞﾂﾁｮｳ')]
+            
+            # 北海道 虻田郡京極町
+            elif self._post_code[0:5] == '04401':
+                return [JPAddressPage(self._post_code, '北海道 虻田郡京極町', 'ﾎｯｶｲﾄﾞｳ ｱﾌﾞﾀｸﾞﾝｷｮｳｺﾞｸﾁｮｳ')]
 
-                # 北海道 阿寒郡鶴居村
-                elif (self._post_code[0:5] == '08512'):
-                    return [JPAddressPage(self._post_code, '北海道 阿寒郡鶴居村', 'ﾎｯｶｲﾄﾞｳ ｱｶﾝｸﾞﾝﾂﾙｲﾑﾗ')]
-                
-                # 北海道 足寄郡足寄町
-                elif self._post_code[0:5] == '08937':
-                    return [JPAddressPage(self._post_code, '北海道 足寄郡足寄町', 'ﾎｯｶｲﾄﾞｳ ｱｼｮﾛｸﾞﾝｱｼｮﾛﾁｮｳ')]
-                
-                # 北海道 足寄郡陸別町
-                elif self._post_code[0:5] == '08943':
-                    return [JPAddressPage(self._post_code, '北海道 足寄郡陸別町', 'ﾎｯｶｲﾄﾞｳ ｱｼｮﾛｸﾞﾝﾘｸﾍﾞﾂﾁｮｳ')]
-                
-                # 北海道 厚岸郡厚岸町
-                elif self._post_code[0:5] == '08811':
-                    return [JPAddressPage(self._post_code, '北海道 厚岸郡厚岸町', 'ﾎｯｶｲﾄﾞｳ ｱｯｹｼｸﾞﾝｱｯｹｼﾁｮｳ')]
-                
-                # 北海道 厚岸郡浜中町
-                elif self._post_code[0:5] == '08815':
-                    return [JPAddressPage(self._post_code, '北海道 厚岸郡浜中町', 'ﾎｯｶｲﾄﾞｳ ｱｯｹｼｸﾞﾝﾊﾏﾅｶﾁｮｳ')]
-                
-                # 北海道 網走郡大空町
-                elif self._post_code[0:5] == '09923':
-                    return [JPAddressPage(self._post_code, '北海道 網走郡大空町', 'ﾎｯｶｲﾄﾞｳ ｱﾊﾞｼﾘｸﾞﾝｵｵｿﾞﾗﾁｮｳ')]
-                
-                # 北海道 網走郡津別町
-                elif self._post_code[0:5] == '09202':
-                    return [JPAddressPage(self._post_code, '北海道 網走郡津別町', 'ﾎｯｶｲﾄﾞｳ ｱﾊﾞｼﾘｸﾞﾝﾂﾍﾞﾂﾁｮｳ')]
-                
-                # 北海道 虻田郡喜茂別町
-                elif self._post_code[0:5] == '04402':
-                    return [JPAddressPage(self._post_code, '北海道 虻田郡喜茂別町', 'ﾎｯｶｲﾄﾞｳ ｱﾌﾞﾀｸﾞﾝｷﾓﾍﾞﾂﾁｮｳ')]
-                
-                # 北海道 虻田郡京極町
-                elif self._post_code[0:5] == '04401':
-                    return [JPAddressPage(self._post_code, '北海道 虻田郡京極町', 'ﾎｯｶｲﾄﾞｳ ｱﾌﾞﾀｸﾞﾝｷｮｳｺﾞｸﾁｮｳ')]
+            # 北海道 旭川市
+            elif self._post_code[0:5] == '07000':
+                return [JPAddressPage(self._post_code, '北海道 旭川市', 'ﾎｯｶｲﾄﾞｳ ｱｻﾋｶﾜｼ')]
+            
+            # 北海道 芦別市
+            elif self._post_code[0:5] == '07500':
+                return [JPAddressPage(self._post_code, '北海道 芦別市', 'ﾎｯｶｲﾄﾞｳ ｱｼﾍﾞﾂｼ')]
+            
+            # 北海道 網走郡美幌町
+            elif self._post_code[0:5] == '09200':
+                return [JPAddressPage(self._post_code, '北海道 網走郡美幌町', 'ﾎｯｶｲﾄﾞｳ ｱﾊﾞｼﾘｸﾞﾝﾋﾞﾎﾛﾁｮｳ')]
+            
+            # 北海道 網走市
+            elif self._post_code[0:5] == '09300':
+                return [JPAddressPage(self._post_code, '北海道 網走市', 'ﾎｯｶｲﾄﾞｳ ｱﾊﾞｼﾘｼ')]
+            
+            # 北海道 虻田郡倶知安町
+            elif self._post_code[0:5] == '04400':
+                return [JPAddressPage(self._post_code, '北海道 虻田郡倶知安町', 'ﾎｯｶｲﾄﾞｳ ｱﾌﾞﾀｸﾞﾝｸｯﾁｬﾝﾁｮｳ')]
 
-                # 北海道 旭川市
-                elif self._post_code[0:5] == '07000':
-                    return [JPAddressPage(self._post_code, '北海道 旭川市', 'ﾎｯｶｲﾄﾞｳ ｱｻﾋｶﾜｼ')]
-                
-                # 北海道 芦別市
-                elif self._post_code[0:5] == '07500':
-                    return [JPAddressPage(self._post_code, '北海道 芦別市', 'ﾎｯｶｲﾄﾞｳ ｱｼﾍﾞﾂｼ')]
-                
-                # 北海道 網走郡美幌町
-                elif self._post_code[0:5] == '09200':
-                    return [JPAddressPage(self._post_code, '北海道 網走郡美幌町', 'ﾎｯｶｲﾄﾞｳ ｱﾊﾞｼﾘｸﾞﾝﾋﾞﾎﾛﾁｮｳ')]
-                
-                # 北海道 網走市
-                elif self._post_code[0:5] == '09300':
-                    return [JPAddressPage(self._post_code, '北海道 網走市', 'ﾎｯｶｲﾄﾞｳ ｱﾊﾞｼﾘｼ')]
-                
-                # 北海道 虻田郡倶知安町
-                elif self._post_code[0:5] == '04400':
-                    return [JPAddressPage(self._post_code, '北海道 虻田郡倶知安町', 'ﾎｯｶｲﾄﾞｳ ｱﾌﾞﾀｸﾞﾝｸｯﾁｬﾝﾁｮｳ')]
-
-                print(ErrorMessageBuilder.message('JPPostCodeBuilder','address_finder','invalid argument',f'the argument ({self._post_code}) is an incompatible post code.'))
-                return []
+            print(ErrorMessageBuilder.message('JPPostCodeBuilder','address_finder','invalid argument',f'the argument ({self._post_code}) is an incompatible post code.'))
+            return []
     
         print(ErrorMessageBuilder.message('JPPostCodeBuilder','address_finder','invalid argument','post code is a 7-digit number.'))
         return []
