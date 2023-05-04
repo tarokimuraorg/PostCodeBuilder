@@ -93,6 +93,10 @@ class JPPostCodeBuilder:
             # 北海道 虻田郡倶知安町
             elif self._post_code[0:5] == '04400':
                 return [JPAddressPage(self._post_code, '北海道 虻田郡倶知安町', 'ﾎｯｶｲﾄﾞｳ ｱﾌﾞﾀｸﾞﾝｸｯﾁｬﾝﾁｮｳ')]
+            
+            # 北海道 虻田郡洞爺湖町
+            elif self._post_code[0:5] == '04956':
+                return [JPAddressPage(self._post_code, '北海道 虻田郡洞爺湖町', 'ﾎｯｶｲﾄﾞｳ ｱﾌﾞﾀｸﾞﾝﾄｳﾔｺﾁｮｳ')]
 
             print(ErrorMessageBuilder.message('JPPostCodeBuilder','address_finder','invalid argument',f'the argument ({self._post_code}) is an incompatible post code.'))
             return []
