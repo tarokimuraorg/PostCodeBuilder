@@ -21,8 +21,14 @@ class JPPostCodeBuilder:
 
         if self._post_code:
 
+            # 特定の郵便番号
+            if self._post_code == '0613774':
+                return [JPAddressPage(self._post_code, '北海道 石狩郡当別町 川下', 'ﾎｯｶｲﾄﾞｳ ｲｼｶﾘｸﾞﾝﾄｳﾍﾞﾂﾁｮｳ ｶﾜｼﾓ')]
+
             raw_address_data = JPAddressData.read_address_data()
-            address_data = list(filter(lambda row: str(row[0]).strip() == self._post_code[1:], raw_address_data))
+
+            # 7桁の郵便番号で検索
+            address_data = list(filter(lambda row: str(row[0]).strip().zfill(7) == self._post_code, raw_address_data))
 
             if len(address_data) > 0:
 
@@ -31,7 +37,18 @@ class JPPostCodeBuilder:
                 if len(address_book) > 0:
                     return address_book
             
-            address_data = list(filter(lambda row: str(row[0]).strip() == f'{self._post_code[1:5]}00', raw_address_data))
+            # 上5桁の郵便番号で検索
+            address_data = list(filter(lambda row: str(row[0]).strip().zfill(7) == f'{self._post_code[0:5]}00', raw_address_data))
+
+            if len(address_data) > 0:
+
+                address_book = list(map(self.__write_on_address_page, address_data))
+
+                if len(address_book) > 0:
+                    return address_book
+
+            # 上3桁の郵便番号で検索
+            address_data = list(filter(lambda row: str(row[0]).strip().zfill(7) == f'{self._post_code[0:3]}0000', raw_address_data))
 
             if len(address_data) > 0:
 
@@ -48,9 +65,8 @@ class JPPostCodeBuilder:
     
     def __write_on_address_page(self, row):
 
-        post_code = '0'
-        post_code = post_code + str(row[0])
-        post_code = post_code.strip()
+        post_code = str(row[0])
+        post_code = post_code.strip().zfill(7)
 
         furigana = str(row[1]) + ' '
         furigana = furigana + str(row[2]) + ' '
