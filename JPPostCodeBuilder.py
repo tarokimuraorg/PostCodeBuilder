@@ -21,10 +21,6 @@ class JPPostCodeBuilder:
 
         if self._post_code:
 
-            # 特定の郵便番号
-            if self._post_code == '0613774':
-                return [JPAddressPage(self._post_code, '北海道 石狩郡当別町 川下', 'ﾎｯｶｲﾄﾞｳ ｲｼｶﾘｸﾞﾝﾄｳﾍﾞﾂﾁｮｳ ｶﾜｼﾓ')]
-
             raw_address_data = JPAddressData.read_address_data()
 
             # 7桁の郵便番号で検索
@@ -78,6 +74,10 @@ class JPPostCodeBuilder:
         furigana = re.sub('\(\d+ﾁｮｳﾒ\d+-\d+ﾊﾞﾝﾁ\)', '', furigana)
         furigana = re.sub('\(\d+､\d+ﾊﾞﾝﾁ\)', '', furigana)
         furigana = re.sub('\(\d+ﾊﾞﾝﾁ\)', '', furigana)
+        furigana = re.sub('､\d+-\d+､\d+', '', furigana)
+        furigana = re.sub('､\d+-\d+-\d+', '', furigana)
+        furigana = re.sub('\(\d+-\d+', '', furigana)
+        #furigana = re.sub('\(\d+-\d+､\d+-\d+-\d+､\d+-\d+､\d+', '', furigana)
         furigana = furigana.replace('(ｿﾉﾀ)', '')
         furigana = furigana.replace('(ﾁｮｳﾒ)', '')
         furigana = furigana.strip()
@@ -93,6 +93,10 @@ class JPPostCodeBuilder:
         address = re.sub('（\d+丁目\d+～\d+番地）', '', address)
         address = re.sub('（\d+、\d+番地）', '', address)
         address = re.sub('（\d+番地）', '', address)
+        address = re.sub('、\d+－\d+、\d+', '', address)
+        address = re.sub('、\d+－\d+～\d+', '', address)
+        address = re.sub('（\d+－\d+', '', address)
+        #address = re.sub('（\d+－\d+、\d+－\d+～\d+、\d+－\d+、\d+', '', address)
         address = address.replace('（その他）', '')
         address = address.replace('（丁目）', '')
         
