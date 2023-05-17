@@ -23,6 +23,10 @@ class JPPostCodeBuilder:
 
             raw_address_data = JPAddressData.read_address_data()
 
+            # 特定の郵便番号（データが複数レコードに分割されている）
+            if self._post_code == '0613774':
+                return [JPAddressPage(self._post_code, '北海道 石狩郡当別町 川下', 'ﾎｯｶｲﾄﾞｳ ｲｼｶﾘｸﾞﾝﾄｳﾍﾞﾂﾁｮｳ ｶﾜｼﾓ')]
+
             # 7桁の郵便番号で検索
             address_data = list(filter(lambda row: str(row[0]).strip().zfill(7) == self._post_code, raw_address_data))
 
@@ -68,14 +72,14 @@ class JPPostCodeBuilder:
         furigana = furigana + str(row[2]) + ' '
         furigana = furigana + str(row[3])
         furigana = furigana.replace('ｲｶﾆｹｲｻｲｶﾞﾅｲﾊﾞｱｲ','')
-        furigana = re.sub('\(.+\)?', '', furigana)
+        furigana = re.sub('\(.+\)', '', furigana)
         furigana = furigana.strip()
 
         address = str(row[4]) + ' '
         address = address + str(row[5]) + ' '
         address = address + str(row[6])
         address = address.replace('以下に掲載がない場合','')
-        address = re.sub('（.+）?', '', address)
+        address = re.sub('（.+）', '', address)
         
         address = address.strip()
 
