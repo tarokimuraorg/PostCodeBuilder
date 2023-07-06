@@ -7,7 +7,7 @@ def read_address_data():
 
     try:
 
-        data_frame = pandas.read_csv('./csv/ken_all.csv', usecols=[2,3,4,5,6,7,8], names=['post_code','furigana1','furigana2','furigana3','address1','address2','address3'])
+        data_frame = pandas.read_csv('./csv/utf_all.csv', usecols=[2,3,4,5,6,7,8], names=['post_code','furigana1','furigana2','furigana3','address1','address2','address3'])
         csv_data = data_frame.drop_duplicates()
 
         return csv_data.values.tolist()
