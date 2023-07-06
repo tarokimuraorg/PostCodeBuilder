@@ -1,10 +1,10 @@
 import re
-import JPAddressData
-from JPAddressPage import JPAddressPage
+import AddressData
+from AddressPage import AddressPage
 from StringConvertor import StringConvertor
 import ErrorMessageBuilder
 
-class JPPostCodeBuilder:
+class PostCodeBuilder:
 
     def __init__(self, post_code : str):
 
@@ -21,11 +21,7 @@ class JPPostCodeBuilder:
 
         if self._post_code:
 
-            raw_address_data = JPAddressData.read_address_data()
-
-            # 特定の郵便番号（データが複数レコードに分割されている）
-            if self._post_code == '0613774':
-                return [JPAddressPage(self._post_code, '北海道 石狩郡当別町 川下', 'ﾎｯｶｲﾄﾞｳ ｲｼｶﾘｸﾞﾝﾄｳﾍﾞﾂﾁｮｳ ｶﾜｼﾓ')]
+            raw_address_data = AddressData.read_address_data()
 
             # 7桁の郵便番号で検索
             address_data = list(filter(lambda row: str(row[0]).strip().zfill(7) == self._post_code, raw_address_data))
@@ -71,8 +67,8 @@ class JPPostCodeBuilder:
         furigana = str(row[1]) + ' '
         furigana = furigana + str(row[2]) + ' '
         furigana = furigana + str(row[3])
-        furigana = furigana.replace('ｲｶﾆｹｲｻｲｶﾞﾅｲﾊﾞｱｲ','')
-        furigana = re.sub('\(.+\)', '', furigana)
+        furigana = furigana.replace('イカニケイサイガナイバアイ','')
+        furigana = re.sub('（.+）', '', furigana)
         furigana = furigana.strip()
 
         address = str(row[4]) + ' '
@@ -83,4 +79,4 @@ class JPPostCodeBuilder:
         
         address = address.strip()
 
-        return JPAddressPage(post_code, address, furigana)
+        return AddressPage(post_code, address, furigana)
