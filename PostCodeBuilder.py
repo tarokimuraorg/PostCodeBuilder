@@ -61,8 +61,8 @@ class PostCodeBuilder:
     
     def __write_on_address_page(self, row):
 
-        post_code = str(row[0])
-        post_code = post_code.strip().zfill(7)
+        # post_code = str(row[0])
+        # post_code = post_code.strip().zfill(7)
 
         furigana = str(row[1]) + ' '
         furigana = furigana + str(row[2]) + ' '
@@ -79,4 +79,4 @@ class PostCodeBuilder:
         
         address = address.strip()
 
-        return AddressPage(post_code, address, furigana)
+        return AddressPage(self._post_code, address, furigana)
