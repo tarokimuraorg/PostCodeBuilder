@@ -10,9 +10,10 @@ class PostCodeBuilder:
 
         self._post_code = ''
 
-        in_code = post_code.strip()
-        out_code = StringConvertor().toHankaku(in_code)
-        out_code = out_code.replace('-', '')
+        in_code = post_code.replace(' ', '')
+        out_code = in_code.replace('〒', '')
+        out_code = re.sub('―|ー|‐|—|₋|-', '', out_code)
+        out_code = StringConvertor().toHankaku(out_code)
         
         if re.match('^\d{7}$', out_code):
              self._post_code = out_code
