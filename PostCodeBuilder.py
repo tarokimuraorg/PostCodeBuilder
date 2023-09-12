@@ -16,7 +16,7 @@ class PostCodeBuilder:
         out_code = StringConvertor().toHankaku(out_code)
         
         if re.match('^\d{7}$', out_code):
-             self._post_code = out_code
+            self._post_code = out_code
 
     def address_finder(self):
 
@@ -61,9 +61,6 @@ class PostCodeBuilder:
         return []
     
     def __write_on_address_page(self, row):
-
-        # post_code = str(row[0])
-        # post_code = post_code.strip().zfill(7)
 
         furigana = str(row[1]) + ' '
         furigana = furigana + str(row[2]) + ' '
